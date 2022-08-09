@@ -1396,12 +1396,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5df3e1da9f155094ba811b9d25dbcd38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerStats: {fileID: 11400000, guid: c8ac31cd285145e46a06d34cf6370db3, type: 2}
+  playerStats: {fileID: 11400000, guid: c8ac31cd285145e46a06d34cf6370db3, type: 2}
   sprites:
   - {fileID: 198483468}
   - {fileID: 654058226}
   - {fileID: 568235842}
   - {fileID: 1638993386}
+  facingDirection: 0
 --- !u!114 &1960404285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1432,10 +1433,6 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9857b131-50c1-417f-8e6f-95bf37176c4c
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 68b6582f-7b96-451c-83d2-c814685e3937
-    m_ActionName: Player/Look[/Mouse/delta,/Pen/delta]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 5f40a840-47f2-4079-be82-3d2043d7a348
@@ -1480,6 +1477,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 8e24d1a2-104b-4309-82a8-911abdd8f8f3
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1960404284}
+        m_TargetAssemblyTypeName: PlayerManager, Assembly-CSharp
+        m_MethodName: DashInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 02e087b9-346c-49ea-9f69-035e465d9991
+    m_ActionName: Player/Dash[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

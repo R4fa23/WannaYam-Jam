@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adeb4966aa09d3c449336c543a919f90, type: 3}
   m_Name: Stats
   m_EditorClassIdentifier: 
-  life: 0
+  maxlife: 0
   damage: 0
-  moveSpeed: 0.25
+  maxstamina: 0
+  staminaGain: 0
   attackSpeed: 0
+  moveSpeed: 0.25
+  dashForce: 43
   inputValue: {x: 0, y: 0}
   smoothTime: 0.1
