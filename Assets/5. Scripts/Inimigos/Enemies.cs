@@ -15,7 +15,7 @@ public abstract class Enemies : MonoBehaviour
  
 
     float timer = 0;
-    private bool attacked;
+    protected bool attacked;
     protected float remainingLife;
 
 
@@ -66,7 +66,7 @@ public abstract class Enemies : MonoBehaviour
 
     }
 
-    void ChangeState(States newState)
+    public void ChangeState(States newState)
     {
         if (state != newState)
             state = newState;
@@ -90,7 +90,7 @@ public abstract class Enemies : MonoBehaviour
 
         if (timer < 0.05)
         {
-            timer = 0.3f;
+            timer = 0.5f;
             Vector3 rayDirection = Player.transform.position - transform.position;
             RaycastHit hitInfo;
             Debug.DrawRay(transform.position, rayDirection, Color.red, FollowDist);
@@ -142,7 +142,7 @@ public abstract class Enemies : MonoBehaviour
         { timer -= Time.deltaTime; }
     }
 
-    void Attack()
+   virtual public void Attack()
     {
         if (Vector3.Distance(transform.position, Player.transform.position) > AttackDist)
         {
@@ -185,20 +185,7 @@ public abstract class Enemies : MonoBehaviour
         }
     }
 
-    public IEnumerator Attacking()
-
-        {
-
-            attacked = true;
-          
-            
-
-        yield return new WaitForSeconds(AttackDelay);
-        Player.GetComponent<PlayerManager>().GetDamage(AttackStrenght);
-        attacked = false;
-        
-
-        }
+    
 
 
 }
