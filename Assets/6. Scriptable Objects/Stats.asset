@@ -17,7 +17,8 @@ MonoBehaviour:
   maxstamina: 0
   staminaGain: 0
   attackSpeed: 0
-  moveSpeed: 0.25
-  dashForce: 43
-  inputValue: {x: 0, y: 0}
+  moveSpeed: 3
+  dashForce: 12.5
   smoothTime: 0.1
+  inputValue: {x: 0, y: 0}
+  canMove: 1

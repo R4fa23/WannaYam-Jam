@@ -16,8 +16,9 @@ public class PlayerStats : ScriptableObject
 
     [Header("Movimentação")]
     public float dashForce;
-    public Vector2 inputValue;
     public float smoothTime;
+     public Vector2 inputValue;
+    [HideInInspector] public bool canMove;
 
     [Header("Inputs")]
     [System.NonSerialized] public UnityEvent DashEvent;

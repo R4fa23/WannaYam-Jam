@@ -6,13 +6,15 @@ public class PlayerMovement : MonoBehaviour
 {
     PlayerManager playerManager;
     PlayerStats playerStats;
-    CharacterController characterController;
+    Rigidbody rig;
 
     Vector3 currentVelocity;
     Vector3 currentInput;
     Vector3 input;
     Vector3 dashVector;
 
+    float forceDashVelocity;
+    float currentDash;
     float dashForce;
     bool dashing;
     bool canDash;
@@ -21,26 +23,27 @@ public class PlayerMovement : MonoBehaviour
     {
         playerManager = FindObjectOfType<PlayerManager>();
         playerStats = playerManager.playerStats;
-        characterController = GetComponent<CharacterController>();
+        rig = GetComponent<Rigidbody>();
     }
 
     void Start()
     {
         playerStats.inputValue = Vector2.zero;
         canDash = true;
+        playerStats.canMove = true;
     }
    
-    void Update()
+    void FixedUpdate()
     {
-        Movement();
-        if(dashing) Dash();
+        if (playerStats.canMove) Movement();
+        if (dashing) Dash();
     }
 
     void Movement()
     {        
         input = new Vector3(playerStats.inputValue.x, 0, playerStats.inputValue.y);
         currentInput = Vector3.SmoothDamp(currentInput, input, ref currentVelocity, playerStats.smoothTime);
-        characterController.Move(currentInput * playerStats.moveSpeed / 10);
+        rig.velocity = currentInput * playerStats.moveSpeed;
     }
 
     void StartDash()
@@ -49,39 +52,30 @@ public class PlayerMovement : MonoBehaviour
     }
     IEnumerator DashTimer()
     {
+        playerManager.SwitchSprites(true);
+        playerStats.canMove = false;
         canDash = false;
         dashing = true;
+
+        Vector2 input = playerStats.inputValue;
+
+        dashVector = new Vector3(input.x, 0, input.y).normalized;
+
+        Debug.Log(dashVector);
+
         yield return new WaitForSeconds(.2f);
+        playerStats.canMove = true;
         canDash = true;
         dashing = false;
+        playerManager.SwitchSprites(false);
     }
 
     void Dash()
-    {        
-        dashForce = playerManager.playerStats.dashForce;       
-
-        switch (playerManager.facingDirection)
-        {
-            case PlayerManager.FacindDirection.Frente:
-                dashVector = -transform.forward;
-                break;
-            case PlayerManager.FacindDirection.Costas:
-                dashVector = transform.forward;
-                break;
-            case PlayerManager.FacindDirection.Esquerda:
-                dashVector = -transform.right;
-                break;
-            case PlayerManager.FacindDirection.Direita:
-                dashVector = transform.right;
-                break;
-            default:
-                break;
-        }
-
-        transform.position +=  dashVector * dashForce * Time.deltaTime;
-    }
-
-   
+    {
+        dashForce = playerManager.playerStats.dashForce;
+        //currentDash = Mathf.SmoothDamp(currentDash, dashForce, ref forceDashVelocity, 0.1f);
+        rig.velocity = dashVector * dashForce;
+    }   
 
     private void OnEnable()
     {
