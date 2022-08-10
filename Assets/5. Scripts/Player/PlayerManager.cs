@@ -13,6 +13,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] GameObject dashGroup;
     [SerializeField] GameObject[] sprites;
     [SerializeField] GameObject[] spritesDash;
+    private float RemainingLife;
 
     PlayerInput playerInput;
     int wichSprite;
@@ -21,7 +22,8 @@ public class PlayerManager : MonoBehaviour
     
     private void Awake()
     {
-        playerInput = GetComponent<PlayerInput>();    
+        playerInput = GetComponent<PlayerInput>();
+        RemainingLife = playerStats.maxlife;
     }
 
     void Start()
@@ -110,6 +112,12 @@ public class PlayerManager : MonoBehaviour
     public void DashInput(InputAction.CallbackContext context)
     {
         if (context.started) playerStats.DashTrigger();
+    }
+
+    public void GetDamage(int damage)
+    {
+        RemainingLife -= damage;
+        Debug.Log("Vida Restante: "+ RemainingLife + " de " + playerStats.maxlife);
     }
     
 }

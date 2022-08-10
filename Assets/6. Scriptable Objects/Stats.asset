@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adeb4966aa09d3c449336c543a919f90, type: 3}
   m_Name: Stats
   m_EditorClassIdentifier: 
-  maxlife: 0
+  maxlife: 10
   damage: 0
   maxstamina: 0
   staminaGain: 0
