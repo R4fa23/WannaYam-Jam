@@ -6,7 +6,9 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName = "Stats", menuName = "Player Stats")]
 public class PlayerStats : ScriptableObject
 {
- 
+    public enum Weapon {Gun, Sword, Lantern, Kart};
+    public Weapon weapon;
+
     [Header("Status Basicos")]
     public float maxlife;
     public float currentLife;
