@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3067524834757404857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3067524834757404855}
+  - component: {fileID: 3067524834757404856}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3067524834757404855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3067524834757404857}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.77278006, y: -0.22434807, z: 0.9124608}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3067524834757404856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3067524834757404857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a204e66feec994b98c499102cfe397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  waves:
+  - Wave:
+    - {fileID: 6687181815894552854, guid: 932e5975672344c498cec712b32712df, type: 3}
+    - {fileID: 6687181815894552854, guid: 932e5975672344c498cec712b32712df, type: 3}
+    - {fileID: 6687181815894552854, guid: 932e5975672344c498cec712b32712df, type: 3}
+    - {fileID: 6687181815894552854, guid: 932e5975672344c498cec712b32712df, type: 3}
+    - {fileID: 6687181815894552854, guid: 932e5975672344c498cec712b32712df, type: 3}
+    - {fileID: 6687181815894552854, guid: 932e5975672344c498cec712b32712df, type: 3}
+  - Wave:
+    - {fileID: 6687181815894552854, guid: 932e5975672344c498cec712b32712df, type: 3}
+    - {fileID: 6687181815894552854, guid: 932e5975672344c498cec712b32712df, type: 3}
+    - {fileID: 6687181815894552854, guid: 932e5975672344c498cec712b32712df, type: 3}
+  DeadEnemies: 
+  IntervalOfSpawn: 2
+  i: 0
+  Player: {fileID: 6295442527114779596, guid: f37e66900ac0f5e488f46dfc910c4675, type: 3}
