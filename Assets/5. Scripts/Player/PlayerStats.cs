@@ -20,7 +20,7 @@ public class PlayerStats : ScriptableObject
 
     [Header("Movimentação")]
     public float dashForce;
-    bool isDashing;
+    public bool isDashing;
     public float smoothTime;
     public int maxDashUses;
     [HideInInspector] public Vector2 inputValue;
@@ -29,12 +29,14 @@ public class PlayerStats : ScriptableObject
     [Header("Events")]
     [System.NonSerialized] public UnityEvent DashEvent;
     [System.NonSerialized] public UnityEvent LifeBarEvent;
+    [System.NonSerialized] public UnityEvent AttackEvent;
 
     private void OnEnable()
     {
         currentLife = maxlife;
         if (DashEvent == null) DashEvent = new UnityEvent();
         if (LifeBarEvent == null) LifeBarEvent = new UnityEvent();
+        if (AttackEvent == null) AttackEvent = new UnityEvent();
     }
 
     public void DashTrigger()
@@ -44,6 +46,11 @@ public class PlayerStats : ScriptableObject
     public void LifeBarTrigger()
     {
         LifeBarEvent.Invoke();
+    }
+
+    public void AttackTrigger()
+    {
+        AttackEvent.Invoke();
     }
 
 }

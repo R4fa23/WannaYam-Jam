@@ -27,7 +27,11 @@ public class PlayerManager : MonoBehaviour
     public void DashInput(InputAction.CallbackContext context)
     {
         if (context.started) playerStats.DashTrigger();
-        
+    }
+
+    public void Attack(InputAction.CallbackContext context)
+    {
+        if (context.started) playerStats.AttackTrigger();
     }
 
     public void GetDamage(int damage)
