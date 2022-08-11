@@ -45,7 +45,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (playerStats.canMove) Movement();
         else rig.velocity = Vector3.zero;
-        if (playerStats.isDashing) Dash();        
+        if (playerStats.isDashing) Dash();
+        rig.velocity = new Vector3(rig.velocity.x, -10, rig.velocity.z);
     }
 
     void Movement()
