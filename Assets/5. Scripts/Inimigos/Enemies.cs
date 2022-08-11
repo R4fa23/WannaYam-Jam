@@ -6,40 +6,38 @@ using UnityEngine.AI;
 public abstract class Enemies : MonoBehaviour
 {
     [SerializeField] protected int Life;
- 
-    //[SerializeField] float MoveSpeed;
     [SerializeField] protected float FollowDist;
     [SerializeField] protected float AttackDist;
     [SerializeField] protected float AttackDelay;
     [SerializeField] protected int AttackStrenght;
- 
+    public bool TesteDeMorte;
 
-    float timer = 0;
+
+    protected float timer = 0;
     protected bool attacked;
     protected float remainingLife;
 
 
-    public enum States { IDDLE, FOLLOWING, ATACKING, HIDING, DASHING }
+    public enum States { IDDLE, FOLLOWING, ATACKING, HIDING, DASHING, DEAD }
     public States state;
-    public GameObject Player;
+    
 
     protected NavMeshAgent agent;
 
-    void Start()
-    {
-        remainingLife = Life;
-        //Só para teste
-        //Remove isso e faz o spawner passar essa info antes de instanciar o inimigo
-        Player = GameObject.FindWithTag("Player");
-        agent = GetComponent<NavMeshAgent>();
-        state = States.IDDLE;
+    protected int wichwave;
+    protected EnemySpawner spawner;
+    protected GameObject Player;
+    protected NavMeshTriangulation Triangulation;
 
 
-
-    }
     private void Update()
     {
-
+        if(TesteDeMorte)
+        {
+            TesteDeMorte = false;
+            Dano(Life);
+        
+       }
         switch (state)
         {
             case States.IDDLE:
@@ -56,6 +54,9 @@ public abstract class Enemies : MonoBehaviour
 
             case States.HIDING:
                 Hide();
+                break;
+            case States.DEAD:
+                Dead();
                 break;
 
                 //  case States.DASHING:
@@ -74,7 +75,7 @@ public abstract class Enemies : MonoBehaviour
 
 
     }
-    void Follow()
+    virtual public void Follow()
     {
 
 
@@ -109,7 +110,7 @@ public abstract class Enemies : MonoBehaviour
         { timer -= Time.deltaTime; }
 
     }
-    void Iddle()
+    virtual public void Iddle()
     {
         if (Vector3.Distance(transform.position, Player.transform.position) < FollowDist)
         {
@@ -164,7 +165,7 @@ public abstract class Enemies : MonoBehaviour
 
     }
 
-    void Hide()
+    virtual public void Hide()
     {
         if (Vector3.Distance(transform.position, Player.transform.position) > FollowDist)
         {
@@ -174,18 +175,34 @@ public abstract class Enemies : MonoBehaviour
 
     }
 
-    public void Dano(float dano)
+    virtual public void Dano(float dano)
     {
         remainingLife -= dano;
         if (remainingLife <= 0)
         {
             StopCoroutine("Attacking");
+            ChangeState(States.DEAD);
 
-            Destroy(gameObject);
         }
     }
 
-    
+    virtual public void Dead()
+    {
+        spawner.killed(wichwave);
+        Destroy(gameObject);
+    }
+
+    virtual public void starter (int wave, EnemySpawner source, GameObject player, NavMeshTriangulation Triang)
+    {
+        wichwave = wave;
+        spawner = source;
+        Player = player;
+        Triangulation = Triang;
+        agent = GetComponent<NavMeshAgent>();
+        state = States.IDDLE;
+        remainingLife = Life;
+
+    }
 
 
 }
