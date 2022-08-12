@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
+    int index;
     [SerializeField] GameObject [] weapons;
     public PlayerStats playerStats;   
     PlayerInput playerInput;
@@ -23,6 +24,7 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {
         playerStats.inputValue = playerInput.actions["Move"].ReadValue<Vector2>();
+        ChooseWeapon();
     }    
 
     public void DashInput(InputAction.CallbackContext context)
@@ -36,10 +38,28 @@ public class PlayerManager : MonoBehaviour
     }
 
     void ChooseWeapon()
-    {
+    {        
+        switch (playerStats.weapon)
+        {
+            case PlayerStats.Weapon.Gun:
+                index = 0;
+                break;
+            case PlayerStats.Weapon.Sword:
+                index = 1;
+                break;
+            case PlayerStats.Weapon.Lantern:
+                index = 2;
+                break;
+            case PlayerStats.Weapon.Kart:
+                index = 3;
+                break;
+            default:
+                break;
+        }
+
         for (int i = 0; i < weapons.Length; i++)
         {
-            if (playerStats.weapon.ToString() == weapons[i].name) weapons[i].SetActive(true);
+            if (i == index) weapons[i].SetActive(true);
             else weapons[i].SetActive(false);
         }
     }

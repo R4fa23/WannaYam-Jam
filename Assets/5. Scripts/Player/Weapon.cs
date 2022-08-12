@@ -4,36 +4,36 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public Animator animator;
+    protected Animator animator;
     public PlayerStats playerStats;
-    public float attackSpeed;
+    protected float attackSpeed;
     public bool canAttack;
 
     public virtual void Awake()
     {
         animator = GetComponentInChildren<Animator>();
-        playerStats.attackSpeed = attackSpeed;
         canAttack = true;
     }
 
     void Update()
     {
-        
     }
 
-    public void Attack()
+    public virtual void Attack()
     {
         if (canAttack && !playerStats.isDashing)
         {
             StartCoroutine(AttackTimer());
         }
+        else animator.speed = 1;
     }
 
     IEnumerator AttackTimer()
     {
+        animator.speed = playerStats.attackSpeed;
         canAttack = false;
         animator.SetTrigger("attack");
-        yield return new WaitForSeconds(playerStats.attackSpeed);
+        yield return new WaitForSeconds(1/playerStats.attackSpeed);
         canAttack = true;
     }
 
