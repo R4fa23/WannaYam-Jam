@@ -24,18 +24,7 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {
         playerStats.inputValue = playerInput.actions["Move"].ReadValue<Vector2>();
-        ChooseWeapon();
     }    
-
-    public void DashInput(InputAction.CallbackContext context)
-    {
-        if (context.started) playerStats.DashTrigger();
-    }
-
-    public void Attack(InputAction.CallbackContext context)
-    {
-        if (context.started) playerStats.AttackTrigger();
-    }
 
     void ChooseWeapon()
     {        
@@ -53,6 +42,10 @@ public class PlayerManager : MonoBehaviour
             case PlayerStats.Weapon.Kart:
                 index = 3;
                 break;
+            case PlayerStats.Weapon.None:
+                foreach (var item in weapons)
+                index = 4;
+                break;
             default:
                 break;
         }
@@ -69,5 +62,31 @@ public class PlayerManager : MonoBehaviour
         playerStats.currentLife -= damage;
         Debug.Log("Vida Restante: "+ playerStats.currentLife + " de " + playerStats.maxlife);
         playerStats.LifeBarTrigger();
-    }    
+    }
+
+    public void DashInput(InputAction.CallbackContext context)
+    {
+        if (context.started) playerStats.DashTrigger();
+    }
+
+    public void Attack(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            playerStats.AttackTrigger();
+            playerStats.attackPressing = true;
+        }
+        else playerStats.attackPressing = false;
+    }
+
+    private void OnEnable()
+    {
+        playerStats.ChooseWeaponEvent.AddListener(ChooseWeapon);
+    }
+
+    private void OnDisable()
+    {
+        playerStats.ChooseWeaponEvent.RemoveListener(ChooseWeapon);
+
+    }
 }

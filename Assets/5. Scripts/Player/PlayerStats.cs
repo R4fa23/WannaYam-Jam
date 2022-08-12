@@ -6,7 +6,7 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName = "Stats", menuName = "Player Stats")]
 public class PlayerStats : ScriptableObject
 {
-    public enum Weapon {Gun, Sword, Lantern, Kart};
+    public enum Weapon {Gun, Sword, Lantern, Kart, None};
     public Weapon weapon;
 
     [Header("Status Basicos")]
@@ -25,13 +25,21 @@ public class PlayerStats : ScriptableObject
     public bool isDashing;
     public float smoothTime;
     public int maxDashUses;
+    public bool dontUpdateSprites;
     [HideInInspector] public Vector2 inputValue;
     [HideInInspector] public bool canMove;
+
+    [Header("Balas")]
+    public Rigidbody[] balas;
 
     [Header("Events")]
     [System.NonSerialized] public UnityEvent DashEvent;
     [System.NonSerialized] public UnityEvent LifeBarEvent;
     [System.NonSerialized] public UnityEvent AttackEvent;
+    [System.NonSerialized] public UnityEvent ChooseWeaponEvent;
+
+    [Header("Inputs")]
+    public bool attackPressing;
 
     private void OnEnable()
     {
@@ -39,6 +47,7 @@ public class PlayerStats : ScriptableObject
         if (DashEvent == null) DashEvent = new UnityEvent();
         if (LifeBarEvent == null) LifeBarEvent = new UnityEvent();
         if (AttackEvent == null) AttackEvent = new UnityEvent();
+        if (ChooseWeaponEvent == null) ChooseWeaponEvent = new UnityEvent();
     }
 
     public void DashTrigger()
@@ -53,6 +62,10 @@ public class PlayerStats : ScriptableObject
     public void AttackTrigger()
     {
         AttackEvent.Invoke();
+    }
+    public void ChooseWeaponEventTrigger()
+    {
+        ChooseWeaponEvent.Invoke();
     }
 
 }

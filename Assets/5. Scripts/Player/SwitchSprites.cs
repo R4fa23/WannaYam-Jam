@@ -7,6 +7,7 @@ public class SwitchSprites : MonoBehaviour
     [SerializeField] GameObject rangedWeaponPosition;
     [SerializeField] GameObject spritesGroup;
     [SerializeField] GameObject dashGroup;
+    [SerializeField] GameObject damageSprite;
     [SerializeField] PlayerStats playerStats;
     [SerializeField] GameObject[] sprites;
     [SerializeField] GameObject[] spritesDash;
@@ -24,7 +25,7 @@ public class SwitchSprites : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerStats.canMove) ChangeSprites();
+        if (playerStats.canMove && !playerStats.dontUpdateSprites) ChangeSprites();
         DashingSprites(playerStats.isDashing);
 
     }
@@ -131,6 +132,16 @@ public class SwitchSprites : MonoBehaviour
                 break;
         }
     }
+
+
+    void DamageSprite()
+    {
+        playerStats.dontUpdateSprites = true;
+        dashGroup.SetActive(false);
+        spritesGroup.SetActive(false);
+        damageSprite.SetActive(true);
+    }
+
     public void DashingSprites(bool dash)
     {
         dashGroup.SetActive(dash);

@@ -526,8 +526,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: c8ac31cd285145e46a06d34cf6370db3, type: 2}
-  dashUses: 0
-  wichIsCharging: 0
   image: {fileID: 7829074942956110825}
 --- !u!1 &7829074942956110805
 GameObject:

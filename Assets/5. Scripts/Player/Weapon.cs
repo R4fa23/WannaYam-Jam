@@ -1,31 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
-    protected Animator animator;
+    [SerializeField] GameObject bullestsGroup;
+    [SerializeField] Rigidbody[] bullets;
+    [SerializeField] GameObject aimPosition;
+    [SerializeField] float velocity;
+    [SerializeField] Image rechargerMeter;
+
+    public float attackSpeed;
     public PlayerStats playerStats;
-    protected float attackSpeed;
-    public bool canAttack;
+
+    protected Animator animator;
+    protected bool continiousAttack;
+    protected bool canAttack;
+    protected bool ranged;
+    protected int index;
+    public bool recharging;
+    protected float rechargeTimer;
 
     public virtual void Awake()
     {
         animator = GetComponentInChildren<Animator>();
         canAttack = true;
+
+        bullestsGroup = GameObject.Find("Bullets");
+
+        bullets = new Rigidbody[bullestsGroup.transform.childCount];
+        for (int i = 0; i < bullets.Length; i++)
+        {
+            bullets[i] = bullestsGroup.transform.GetChild(i).GetComponent<Rigidbody>();
+        }
     }
 
-    void Update()
+    public virtual void Update()
     {
+        if (recharging) rechargerMeter.fillAmount += playerStats.attackSpeed / rechargeTimer * Time.deltaTime;
+        if (rechargerMeter.fillAmount >= 1)
+        {
+            rechargerMeter.fillAmount = 0;
+            recharging = false;
+        }
     }
-
     public virtual void Attack()
     {
-        if (canAttack && !playerStats.isDashing)
+        if (canAttack && !playerStats.isDashing && !recharging)
         {
             StartCoroutine(AttackTimer());
         }
-        else animator.speed = 1;
     }
 
     IEnumerator AttackTimer()
@@ -33,8 +58,34 @@ public class Weapon : MonoBehaviour
         animator.speed = playerStats.attackSpeed;
         canAttack = false;
         animator.SetTrigger("attack");
+        if (ranged) RangedAttack();
+
         yield return new WaitForSeconds(1/playerStats.attackSpeed);
+
         canAttack = true;
+        animator.speed = 1;
+        if (continiousAttack && playerStats.attackPressing) Attack();
+    }
+
+    void RangedAttack()
+    {
+        for (int i = 0; i < bullets.Length; i++)
+        {
+            if (i == index)
+            {                
+                bullets[i].gameObject.SetActive(true);
+                bullets[i].transform.position = aimPosition.transform.position;
+                bullets[i].transform.rotation = aimPosition.transform.rotation;
+                bullets[i].velocity = bullets[i].transform.forward * velocity;
+            }
+        }
+        index++;
+        if (index > 5)
+        {
+            recharging = true;
+            Debug.Log("alow");
+            index = 0;            
+        }
     }
 
     private void OnEnable()
