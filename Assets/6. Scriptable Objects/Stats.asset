@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adeb4966aa09d3c449336c543a919f90, type: 3}
   m_Name: Stats
   m_EditorClassIdentifier: 
-  weapon: 0
+  weapon: 3
   maxlife: 10
-  currentLife: 10
+  currentLife: -80
   damage: 0
   maxstamina: 1
   currentStamina: 1
@@ -22,6 +22,7 @@ MonoBehaviour:
   dashUses: 3
   attackSpeed: 2
   moveSpeed: 3
+  canTakeDamage: 1
   dashForce: 12
   isDashing: 0
   smoothTime: 0.1

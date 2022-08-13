@@ -7,11 +7,19 @@ public class Sword : Weapon
     public override void Awake()
     {
         base.Awake();
+        rechargeTimer = 1f;
+        rechargeOnEnd = true;
     }
 
-    private void Update()
+    public override void Update()
     {
+        base.Update();
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Sword Attack")) playerStats.canMove = false;
         else playerStats.canMove = true;
+    }
+
+    public override void Attack()
+    {
+        base.Attack();
     }
 }

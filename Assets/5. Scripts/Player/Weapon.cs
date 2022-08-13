@@ -5,22 +5,23 @@ using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
+    [SerializeField] PlayerStats playerStats;
     [SerializeField] GameObject bullestsGroup;
     [SerializeField] Rigidbody[] bullets;
     [SerializeField] GameObject aimPosition;
-    [SerializeField] float velocity;
     [SerializeField] Image rechargerMeter;
+    [SerializeField] float velocity;
 
     public float attackSpeed;
-    public PlayerStats playerStats;
+    public float rechargeTimer;
 
     protected Animator animator;
     protected bool continiousAttack;
     protected bool canAttack;
     protected bool ranged;
     protected int index;
-    public bool recharging;
-    protected float rechargeTimer;
+    protected bool recharging;
+    protected bool rechargeOnEnd;
 
     public virtual void Awake()
     {
@@ -28,12 +29,13 @@ public class Weapon : MonoBehaviour
         canAttack = true;
 
         bullestsGroup = GameObject.Find("Bullets");
-
         bullets = new Rigidbody[bullestsGroup.transform.childCount];
         for (int i = 0; i < bullets.Length; i++)
         {
             bullets[i] = bullestsGroup.transform.GetChild(i).GetComponent<Rigidbody>();
         }
+
+        playerStats.attackSpeed = attackSpeed;
     }
 
     public virtual void Update()
@@ -64,6 +66,7 @@ public class Weapon : MonoBehaviour
 
         canAttack = true;
         animator.speed = 1;
+        if (rechargeOnEnd) recharging = true;
         if (continiousAttack && playerStats.attackPressing) Attack();
     }
 

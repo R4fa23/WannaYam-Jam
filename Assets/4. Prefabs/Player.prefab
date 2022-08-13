@@ -540,9 +540,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5024021018191482456}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0.042, y: 0.628, z: -0.033}
+  m_LocalScale: {x: 1.1237, y: 1.1237, z: 1.1237}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6295442527856917348}
   m_RootOrder: 0
@@ -575,7 +575,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6542322701f881b47b7e8a899884991f, type: 2}
+  - {fileID: 2100000, guid: 37869d539601f374898e3c6ee9f1d15b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1271,6 +1271,7 @@ MonoBehaviour:
   rangedWeaponPosition: {fileID: 278605728138054895}
   spritesGroup: {fileID: 5112804486859936852}
   dashGroup: {fileID: 690057331980265442}
+  damageSprite: {fileID: 5024021018191482456}
   playerStats: {fileID: 11400000, guid: c8ac31cd285145e46a06d34cf6370db3, type: 2}
   sprites:
   - {fileID: 6295442527526146677}
@@ -2111,6 +2112,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5281141262812710255, guid: a5e8dfdd9676040409ca1f59fefbac66,
+        type: 3}
+      propertyPath: recharging
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281141262812710255, guid: a5e8dfdd9676040409ca1f59fefbac66,
+        type: 3}
+      propertyPath: rechargerMeter
+      value: 
+      objectReference: {fileID: 6352273487545580416}
     - target: {fileID: 8685529927201862648, guid: a5e8dfdd9676040409ca1f59fefbac66,
         type: 3}
       propertyPath: m_LocalPosition.x

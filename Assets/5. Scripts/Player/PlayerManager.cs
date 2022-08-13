@@ -5,20 +5,25 @@ using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
-    int index;
-    [SerializeField] GameObject [] weapons;
-    public PlayerStats playerStats;   
-    PlayerInput playerInput;
-    public bool dashing;
     
+    [SerializeField] GameObject [] weapons;
+
+    public PlayerStats playerStats;
+    public bool dashing;
+
+    PlayerInput playerInput;
+    Animator animator;
+    int index;
+
     private void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
+        animator = GetComponent<Animator>();
     }
 
     void Start()
     {
-        
+        ChooseWeapon();
     }
 
     void Update()
@@ -59,9 +64,22 @@ public class PlayerManager : MonoBehaviour
 
     public void GetDamage(int damage)
     {
-        playerStats.currentLife -= damage;
-        Debug.Log("Vida Restante: "+ playerStats.currentLife + " de " + playerStats.maxlife);
-        playerStats.LifeBarTrigger();
+        if (playerStats.canTakeDamage)
+        {
+            animator.SetTrigger("take damage");
+            playerStats.canTakeDamage = false;
+            playerStats.currentLife -= damage;
+            //Debug.Log("Vida Restante: " + playerStats.currentLife + " de " + playerStats.maxlife);
+            playerStats.LifeBarTrigger();
+            playerStats.DamageSpriteTrigger();
+            StartCoroutine(CanTakeDamageTimer());
+        }        
+    }
+
+    IEnumerator CanTakeDamageTimer()
+    {
+        yield return new WaitForSeconds(0.3f);
+        playerStats.canTakeDamage = true;
     }
 
     public void DashInput(InputAction.CallbackContext context)

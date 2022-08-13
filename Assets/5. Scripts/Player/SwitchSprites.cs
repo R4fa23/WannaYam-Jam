@@ -26,7 +26,7 @@ public class SwitchSprites : MonoBehaviour
     void Update()
     {
         if (playerStats.canMove && !playerStats.dontUpdateSprites) ChangeSprites();
-        DashingSprites(playerStats.isDashing);
+        if (!playerStats.dontUpdateSprites) DashingSprites(playerStats.isDashing);
 
     }
 
@@ -133,18 +133,44 @@ public class SwitchSprites : MonoBehaviour
         }
     }
 
-
     void DamageSprite()
     {
+        StartCoroutine(CanTakeDamageTimer());       
+    }
+
+    IEnumerator CanTakeDamageTimer()
+    {
         playerStats.dontUpdateSprites = true;
+
         dashGroup.SetActive(false);
         spritesGroup.SetActive(false);
+
         damageSprite.SetActive(true);
+
+        yield return new WaitWhile(()=> !playerStats.canTakeDamage);
+
+        damageSprite.SetActive(false);
+
+        dashGroup.SetActive(true);
+        spritesGroup.SetActive(true);
+
+        playerStats.dontUpdateSprites = false;
     }
 
     public void DashingSprites(bool dash)
     {
         dashGroup.SetActive(dash);
         spritesGroup.SetActive(!dash);
+    }
+
+    private void OnEnable()
+    {
+        playerStats.DamageSpriteEvent.AddListener(DamageSprite);
+    }
+
+    private void OnDisable()
+    {
+        playerStats.DamageSpriteEvent.RemoveListener(DamageSprite);
+
     }
 }
