@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Mushroom_Dick
     second: {fileID: 2100000, guid: e9fbedb6ba5ae0c4bb2050c44e22252b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom_Head
+    second: {fileID: 2100000, guid: e9fbedb6ba5ae0c4bb2050c44e22252b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
