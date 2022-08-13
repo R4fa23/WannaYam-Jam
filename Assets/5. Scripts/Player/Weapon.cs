@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] PlayerStats playerStats;
+    public PlayerStats playerStats;
     [SerializeField] GameObject bullestsGroup;
     [SerializeField] Rigidbody[] bullets;
     [SerializeField] GameObject aimPosition;
@@ -49,7 +49,7 @@ public class Weapon : MonoBehaviour
     }
     public virtual void Attack()
     {
-        if (canAttack && !playerStats.isDashing && !recharging)
+        if (canAttack && !playerStats.isDashing && !recharging && !playerStats.dead && playerStats.canTakeDamage)
         {
             StartCoroutine(AttackTimer());
         }

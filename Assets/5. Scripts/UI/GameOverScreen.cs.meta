@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 1422dfd1d4f40914294d3b94d6d6f470
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - DeathScreen: {instanceID: 0}
+  - playerStats: {fileID: 11400000, guid: c8ac31cd285145e46a06d34cf6370db3, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

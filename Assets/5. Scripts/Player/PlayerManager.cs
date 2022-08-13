@@ -66,14 +66,31 @@ public class PlayerManager : MonoBehaviour
     {
         if (playerStats.canTakeDamage)
         {
-            animator.SetTrigger("take damage");
-            playerStats.canTakeDamage = false;
             playerStats.currentLife -= damage;
-            //Debug.Log("Vida Restante: " + playerStats.currentLife + " de " + playerStats.maxlife);
+            if (playerStats.currentLife <= 0) playerStats.currentLife = 0;
+            if (playerStats.currentLife >= playerStats.maxlife) playerStats.currentLife = playerStats.maxlife;
             playerStats.LifeBarTrigger();
-            playerStats.DamageSpriteTrigger();
-            StartCoroutine(CanTakeDamageTimer());
-        }        
+            playerStats.canTakeDamage = false;
+
+            if (playerStats.currentLife > 0)
+            {                
+                animator.SetTrigger("take damage");
+                playerStats.DamageSpriteTrigger();
+                StartCoroutine(CanTakeDamageTimer());
+            } 
+            else
+            {
+                playerStats.DeathTrigger();
+                animator.SetTrigger("dead");
+                playerStats.canMove = false;
+                playerStats.dead = true;
+                foreach (var item in weapons)
+                {
+                    item.SetActive(false);
+                }
+            }
+            //Debug.Log("Vida Restante: " + playerStats.currentLife + " de " + playerStats.maxlife);
+        }
     }
 
     IEnumerator CanTakeDamageTimer()

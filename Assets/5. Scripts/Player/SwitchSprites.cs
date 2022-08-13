@@ -7,6 +7,7 @@ public class SwitchSprites : MonoBehaviour
     [SerializeField] GameObject rangedWeaponPosition;
     [SerializeField] GameObject spritesGroup;
     [SerializeField] GameObject dashGroup;
+    [SerializeField] GameObject deathSprite;
     [SerializeField] GameObject damageSprite;
     [SerializeField] PlayerStats playerStats;
     [SerializeField] GameObject[] sprites;
@@ -140,17 +141,16 @@ public class SwitchSprites : MonoBehaviour
 
     IEnumerator CanTakeDamageTimer()
     {
-        playerStats.dontUpdateSprites = true;
+        Debug.Log("switchspritedamage");
 
+        playerStats.dontUpdateSprites = true;
         dashGroup.SetActive(false);
         spritesGroup.SetActive(false);
-
         damageSprite.SetActive(true);
 
         yield return new WaitWhile(()=> !playerStats.canTakeDamage);
 
         damageSprite.SetActive(false);
-
         dashGroup.SetActive(true);
         spritesGroup.SetActive(true);
 
@@ -163,14 +163,24 @@ public class SwitchSprites : MonoBehaviour
         spritesGroup.SetActive(!dash);
     }
 
+    public void DeathSprite()
+    {
+        Debug.Log("death");
+        playerStats.dontUpdateSprites = true;
+        spritesGroup.SetActive(false);
+        dashGroup.SetActive(false);
+        damageSprite.SetActive(false);
+        deathSprite.SetActive(true);
+    }
+
     private void OnEnable()
     {
         playerStats.DamageSpriteEvent.AddListener(DamageSprite);
+        playerStats.DeathEvent.AddListener(DeathSprite);
     }
 
     private void OnDisable()
     {
-        playerStats.DamageSpriteEvent.RemoveListener(DamageSprite);
-
+        playerStats.DeathEvent.RemoveListener(DeathSprite);
     }
 }

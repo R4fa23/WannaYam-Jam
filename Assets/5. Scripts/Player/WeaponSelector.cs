@@ -43,37 +43,29 @@ public class WeaponSelector : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-              switch (weapon)
-              {
-                  case Weapon.Gun:
-                      playerStats.weapon = PlayerStats.Weapon.Gun;
-                      break;
-                  case Weapon.Sword:
-                      playerStats.weapon = PlayerStats.Weapon.Sword;
-                      break;
-                  case Weapon.Lantern:
-                      playerStats.weapon = PlayerStats.Weapon.Lantern;
-                      break;
-                  case Weapon.Kart:
-                      playerStats.weapon = PlayerStats.Weapon.Kart;
-                      break;
-                  default:
-                      break;
-              }
-
-              weaponGroup.SetActive(false);
-              playerStats.ChooseWeaponEventTrigger();
-              other.GetComponent<PlayerManager>().GetDamage(10);
-
-              foreach (var item in otherWeaponsSelectors)
-              {
-                  item.weaponGroup.SetActive(true);
-              }
-
-            other.GetComponent<PlayerManager>().GetDamage(10);
-
+            switch (weapon)
+            {
+                case Weapon.Gun:
+                    playerStats.weapon = PlayerStats.Weapon.Gun;
+                    break;
+                case Weapon.Sword:
+                    playerStats.weapon = PlayerStats.Weapon.Sword;
+                    break;
+                case Weapon.Lantern:
+                    playerStats.weapon = PlayerStats.Weapon.Lantern;
+                    break;
+                case Weapon.Kart:
+                    playerStats.weapon = PlayerStats.Weapon.Kart;
+                    break;
+                default:
+                    break;
+            }
+            weaponGroup.SetActive(false);
+            foreach (var item in otherWeaponsSelectors)
+            {
+                item.weaponGroup.SetActive(true);
+            }
+            playerStats.ChooseWeaponEventTrigger();
         }
-
-
     }
 }

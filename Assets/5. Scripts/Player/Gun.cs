@@ -17,7 +17,11 @@ public class Gun : Weapon
     public override void Update()
     {
         base.Update();
-        if (playerStats.attackPressing) playerStats.dontUpdateSprites = true;
-        else playerStats.dontUpdateSprites = false;
+        if (!playerStats.dead && playerStats.canTakeDamage)
+        {
+            if (playerStats.attackPressing) playerStats.dontUpdateSprites = true;
+            else playerStats.dontUpdateSprites = false;
+        }
+       
     }
 }

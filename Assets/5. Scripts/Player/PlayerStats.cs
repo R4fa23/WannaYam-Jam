@@ -20,6 +20,7 @@ public class PlayerStats : ScriptableObject
     public float attackSpeed;
     public float moveSpeed;
     public bool canTakeDamage;
+    public bool dead;
 
     [Header("Movimentação")]
     public float dashForce;
@@ -39,6 +40,7 @@ public class PlayerStats : ScriptableObject
     [System.NonSerialized] public UnityEvent AttackEvent;
     [System.NonSerialized] public UnityEvent ChooseWeaponEvent;
     [System.NonSerialized] public UnityEvent DamageSpriteEvent;
+    [System.NonSerialized] public UnityEvent DeathEvent;
 
     [Header("Inputs")]
     public bool attackPressing;
@@ -65,6 +67,7 @@ public class PlayerStats : ScriptableObject
         if (AttackEvent == null) AttackEvent = new UnityEvent();
         if (ChooseWeaponEvent == null) ChooseWeaponEvent = new UnityEvent();
         if (DamageSpriteEvent == null) DamageSpriteEvent = new UnityEvent();
+        if (DeathEvent == null) DeathEvent = new UnityEvent();
     }
 
     public void DashTrigger()
@@ -90,6 +93,11 @@ public class PlayerStats : ScriptableObject
         DamageSpriteEvent.Invoke();
     }
 
+    public void DeathTrigger()
+    {
+        DeathEvent.Invoke();
+    }
+
     public void ResetValues()
     {
         maxlife = maxlifeReset;
@@ -104,6 +112,6 @@ public class PlayerStats : ScriptableObject
         canMove = true;
         canTakeDamage = true;
         dontUpdateSprites = false;
-
+        dead = false;
     }
 }
