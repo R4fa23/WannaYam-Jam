@@ -3,7 +3,22 @@ guid: d0d60028919573a4c88f72203c337fe4
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom_Head
+    second: {fileID: 2100000, guid: e9fbedb6ba5ae0c4bb2050c44e22252b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom_Head.002
+    second: {fileID: 2100000, guid: e9fbedb6ba5ae0c4bb2050c44e22252b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom_Head.003
+    second: {fileID: 2100000, guid: e9fbedb6ba5ae0c4bb2050c44e22252b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
