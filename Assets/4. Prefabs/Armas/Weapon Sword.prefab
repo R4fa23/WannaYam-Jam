@@ -156,7 +156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4889719840159446620
 Transform:
   m_ObjectHideFlags: 0
@@ -191,8 +191,8 @@ MonoBehaviour:
   aimPosition: {fileID: 0}
   rechargerMeter: {fileID: 0}
   velocity: 0
-  attackSpeed: 0
-  rechargeTimer: 0
+  attackSpeed: 2
+  rechargerMultiplier: 0
 --- !u!1001 &9152310660788999187
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -182,7 +182,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218297598093514232}
   m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
-  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 1.087}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -192,7 +192,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 1.1}
+  m_AnchoredPosition: {x: 0, y: 0.627}
   m_SizeDelta: {x: 0.3, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7407327074740283662
@@ -2221,11 +2221,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Weapon Sword
       objectReference: {fileID: 0}
-    - target: {fileID: 3726980870347401133, guid: a5e8dfdd9676040409ca1f59fefbac66,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4889719840159446620, guid: a5e8dfdd9676040409ca1f59fefbac66,
         type: 3}
       propertyPath: m_RootOrder
@@ -2283,33 +2278,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5281141262812710255, guid: a5e8dfdd9676040409ca1f59fefbac66,
         type: 3}
-      propertyPath: recharging
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5281141262812710255, guid: a5e8dfdd9676040409ca1f59fefbac66,
-        type: 3}
-      propertyPath: attackSpeed
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5281141262812710255, guid: a5e8dfdd9676040409ca1f59fefbac66,
-        type: 3}
-      propertyPath: rechargeTimer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5281141262812710255, guid: a5e8dfdd9676040409ca1f59fefbac66,
-        type: 3}
       propertyPath: rechargerMeter
       value: 
       objectReference: {fileID: 6352273487545580416}
-    - target: {fileID: 8685529927201862648, guid: a5e8dfdd9676040409ca1f59fefbac66,
+    - target: {fileID: 5281141262812710255, guid: a5e8dfdd9676040409ca1f59fefbac66,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8685529927201862648, guid: a5e8dfdd9676040409ca1f59fefbac66,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
+      propertyPath: rechargerMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5e8dfdd9676040409ca1f59fefbac66, type: 3}
@@ -2582,21 +2557,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Weapon Gun
       objectReference: {fileID: 0}
-    - target: {fileID: 4286897278143119699, guid: 427a7455e1dfb244a8cddcd6caabd064,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836569251981279826, guid: 427a7455e1dfb244a8cddcd6caabd064,
-        type: 3}
-      propertyPath: aimPosition
-      value: 
-      objectReference: {fileID: 8560641888590432970}
     - target: {fileID: 6836569251981279826, guid: 427a7455e1dfb244a8cddcd6caabd064,
         type: 3}
       propertyPath: rechargerMeter
       value: 
       objectReference: {fileID: 6352273487545580416}
+    - target: {fileID: 6836569251981279826, guid: 427a7455e1dfb244a8cddcd6caabd064,
+        type: 3}
+      propertyPath: rechargerMultiplier
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 427a7455e1dfb244a8cddcd6caabd064, type: 3}
 --- !u!4 &5981020360304953442 stripped
@@ -2608,12 +2578,6 @@ Transform:
 --- !u!1 &8176753790208903706 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4286897278143119699, guid: 427a7455e1dfb244a8cddcd6caabd064,
-    type: 3}
-  m_PrefabInstance: {fileID: 5334430622908959561}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8560641888590432970 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4380373040517038467, guid: 427a7455e1dfb244a8cddcd6caabd064,
     type: 3}
   m_PrefabInstance: {fileID: 5334430622908959561}
   m_PrefabAsset: {fileID: 0}

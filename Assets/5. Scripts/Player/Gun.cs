@@ -12,7 +12,6 @@ public class Gun : Weapon
         continiousAttack = true;
         ranged = true;
         rechargeTimer = 3;
-        playerStats.damage = playerStats.armaLaser;
     }
 
     public override void Update()

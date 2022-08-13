@@ -37,8 +37,10 @@ public class PlayerManager : MonoBehaviour
         {
             case PlayerStats.Weapon.Gun:
                 index = 0;
+                playerStats.attackSpeed = playerStats.armaLaserSpeed;
                 break;
             case PlayerStats.Weapon.Sword:
+                playerStats.attackSpeed = playerStats.espadaSpeed;
                 index = 1;
                 break;
             case PlayerStats.Weapon.Lantern:
@@ -60,6 +62,7 @@ public class PlayerManager : MonoBehaviour
             if (i == index) weapons[i].SetActive(true);
             else weapons[i].SetActive(false);
         }
+
     }
 
     public void GetDamage(int damage)

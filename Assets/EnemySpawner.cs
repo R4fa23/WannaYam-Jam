@@ -25,7 +25,7 @@ public class EnemySpawner : MonoBehaviour
             DeadEnemies.Add(waves.Count);
             DeadEnemies[waves.IndexOf(wavequant)] = wavequant.Wave.Count;
         }
-        enableSpawn = true;
+      enableSpawn = true;
         
 
     }
