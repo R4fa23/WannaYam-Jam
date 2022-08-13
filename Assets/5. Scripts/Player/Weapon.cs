@@ -12,8 +12,9 @@ public class Weapon : MonoBehaviour
     [SerializeField] Image rechargerMeter;
     [SerializeField] float velocity;
 
+    protected float rechargeTimer;
     public float attackSpeed;
-    public float rechargeTimer;
+    public float rechargerMultiplier;
 
     protected Animator animator;
     protected bool continiousAttack;
@@ -35,12 +36,15 @@ public class Weapon : MonoBehaviour
             bullets[i] = bullestsGroup.transform.GetChild(i).GetComponent<Rigidbody>();
         }
 
-        playerStats.attackSpeed = attackSpeed;
+        if (rechargerMultiplier == 0) rechargerMultiplier = 1;
+
     }
 
     public virtual void Update()
     {
-        if (recharging) rechargerMeter.fillAmount += playerStats.attackSpeed / rechargeTimer * Time.deltaTime;
+        attackSpeed = playerStats.attackSpeed;
+
+        if (recharging) rechargerMeter.fillAmount += playerStats.attackSpeed * Time.deltaTime * rechargerMultiplier * playerStats.attackSpeedMultiplier;
         if (rechargerMeter.fillAmount >= 1)
         {
             rechargerMeter.fillAmount = 0;

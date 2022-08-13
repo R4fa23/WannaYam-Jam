@@ -11,16 +11,18 @@ public class PlayerStats : ScriptableObject
 
     [Header("Status Basicos")]
     public float maxlife;
-    public float currentLife;
+    [HideInInspector] public float currentLife;
     public float damage;
     public float maxstamina;
-    public float currentStamina;
+    [HideInInspector] public float currentStamina;
     public float staminaGain;
     public float dashUses;
-    public float attackSpeed;
+    [HideInInspector] public float attackSpeed;
+    [HideInInspector] public bool dead;
+     public float attackSpeedMultiplier;
     public float moveSpeed;
-    public bool canTakeDamage;
-    public bool dead;
+    [HideInInspector] public bool canTakeDamage;
+
 
     [Header("Movimentação")]
     public float dashForce;
@@ -53,7 +55,9 @@ public class PlayerStats : ScriptableObject
 
     [Header("Dano das Armas")]
     public float armaLaser;
+    public float armaLaserSpeed;
     public float espada;
+    public float espadaSpeed;
     
     private void Awake()
     {
@@ -109,7 +113,7 @@ public class PlayerStats : ScriptableObject
         dashUses = dashUsesReset;
         attackSpeed = attackSpeedReset;
         moveSpeed = moveSpeedReset;
-
+        attackSpeedMultiplier = 1;
         canMove = true;
         canTakeDamage = true;
         dontUpdateSprites = false;

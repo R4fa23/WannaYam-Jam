@@ -9,7 +9,6 @@ public class Sword : Weapon
         base.Awake();
         rechargeTimer = 1f;
         rechargeOnEnd = true;
-        playerStats.damage = playerStats.espada;
     }
 
     public override void Update()
