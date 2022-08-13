@@ -186,7 +186,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: c8ac31cd285145e46a06d34cf6370db3, type: 2}
-  canAttack: 0
+  bullestsGroup: {fileID: 0}
+  bullets: []
+  aimPosition: {fileID: 0}
+  rechargerMeter: {fileID: 0}
+  velocity: 0
+  attackSpeed: 0
+  rechargeTimer: 0
 --- !u!1001 &9152310660788999187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -295,6 +301,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3059186878096320439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8341480010893519170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf75da0b80e2aaf4d900617b0a5985f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerStats: {fileID: 11400000, guid: c8ac31cd285145e46a06d34cf6370db3, type: 2}
 --- !u!4 &8685529927201862648 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9ed80840c8a5eb046a820b7d5c88da73,

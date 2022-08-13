@@ -31,9 +31,6 @@ public class PlayerStats : ScriptableObject
     [HideInInspector] public Vector2 inputValue;
     public bool canMove;
 
-    [Header("Balas")]
-    public Rigidbody[] balas;
-
     [Header("Events")]
     [System.NonSerialized] public UnityEvent DashEvent;
     [System.NonSerialized] public UnityEvent LifeBarEvent;
@@ -54,6 +51,10 @@ public class PlayerStats : ScriptableObject
     public float attackSpeedReset;
     public float moveSpeedReset;
 
+    [Header("Dano das Armas")]
+    public float armaLaser;
+    public float espada;
+    
     private void Awake()
     {
         
