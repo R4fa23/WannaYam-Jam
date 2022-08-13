@@ -10,6 +10,7 @@ public abstract class Enemies : MonoBehaviour
     [SerializeField] protected float AttackDist;
     [SerializeField] protected float AttackDelay;
     [SerializeField] protected int AttackStrenght;
+    Animator animator;
     public bool TesteDeMorte;
 
 
@@ -183,7 +184,11 @@ public abstract class Enemies : MonoBehaviour
             StopCoroutine("Attacking");
             ChangeState(States.DEAD);
 
+        }else
+        {
+            StartCoroutine("JumpBack");
         }
+
     }
 
     virtual public void Dead()
@@ -201,6 +206,25 @@ public abstract class Enemies : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         state = States.IDDLE;
         remainingLife = Life;
+        animator = GetComponent<Animator>();
+
+    }
+
+    public IEnumerator JumpBack()
+
+    {
+        agent.enabled = false;
+        animator.SetTrigger("dano");
+        GetComponent<Rigidbody>().isKinematic = false;
+
+        Vector3 dir = Player.transform.position - transform.position;
+        dir = -dir.normalized;
+        GetComponent<Rigidbody>().AddForce(dir * 2500f, ForceMode.Force);
+
+        yield return new WaitForSeconds(0.3f);
+        GetComponent<Rigidbody>().isKinematic = true;
+        agent.enabled = true;
+
 
     }
 
