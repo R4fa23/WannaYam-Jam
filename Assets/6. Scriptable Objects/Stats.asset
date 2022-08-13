@@ -26,6 +26,7 @@ MonoBehaviour:
   isDashing: 0
   smoothTime: 0.1
   maxDashUses: 3
+  dontUpdateSprites: 0
   inputValue: {x: 0, y: 0}
   canMove: 1
   balas: []
