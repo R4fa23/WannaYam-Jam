@@ -20,7 +20,7 @@ MonoBehaviour:
   currentStamina: 1
   staminaGain: 0.2
   dashUses: 3
-  attackSpeed: 4
+  attackSpeed: 1
   dead: 0
   attackSpeedMultiplier: 1
   moveSpeed: 3
@@ -44,3 +44,4 @@ MonoBehaviour:
   armaLaserSpeed: 4
   espada: 0
   espadaSpeed: 2
+  wichLevel: 0

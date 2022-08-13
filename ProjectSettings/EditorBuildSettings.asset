@@ -5,10 +5,34 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/7. Scenes/Testes Rafa.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/7. Scenes/Level_00.unity
     guid: a84a8ba46cf603c4e9ecd3dd6239f642
+  - enabled: 1
+    path: Assets/7. Scenes/Level_01.unity
+    guid: 6e93bfd06f685894581df2eb27b52440
+  - enabled: 1
+    path: Assets/7. Scenes/Level_01_2.unity
+    guid: 440354b6c746d7d429377fb4a3774add
+  - enabled: 1
+    path: Assets/7. Scenes/Level_02.unity
+    guid: 6697414784dd3be479109e33b395b7e7
+  - enabled: 1
+    path: Assets/7. Scenes/Level_02_2.unity
+    guid: 92790a4921e497241a2e65a9828c2edd
+  - enabled: 1
+    path: Assets/7. Scenes/Level_03.unity
+    guid: 15a2ea65b6713964d9df78408cbfefc5
+  - enabled: 1
+    path: Assets/7. Scenes/Level_03_2.unity
+    guid: c099544c3bf2c3c459970882775b772e
+  - enabled: 1
+    path: Assets/7. Scenes/Level_04.unity
+    guid: af999c6a86232ec4b863faf1c1f3b0e6
+  - enabled: 1
+    path: Assets/7. Scenes/Level_04_2.unity
+    guid: 3868382d9545e8849a3839bdfc8de06e
   m_configObjects: {}

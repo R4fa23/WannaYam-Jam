@@ -125,6 +125,5 @@ public class PlayerManager : MonoBehaviour
     private void OnDisable()
     {
         playerStats.ChooseWeaponEvent.RemoveListener(ChooseWeapon);
-
     }
 }

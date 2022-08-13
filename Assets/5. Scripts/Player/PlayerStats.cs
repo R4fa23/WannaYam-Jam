@@ -58,7 +58,11 @@ public class PlayerStats : ScriptableObject
     public float armaLaserSpeed;
     public float espada;
     public float espadaSpeed;
-    
+
+    [Header("Scenes")]
+
+    public float wichLevel = 0;    
+
     private void Awake()
     {
         
@@ -118,5 +122,6 @@ public class PlayerStats : ScriptableObject
         canTakeDamage = true;
         dontUpdateSprites = false;
         dead = false;
+        wichLevel = 0;
     }
 }
