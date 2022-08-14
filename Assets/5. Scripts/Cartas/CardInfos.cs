@@ -24,8 +24,13 @@ public class CardInfos : MonoBehaviour
 
     private void Start()
     {
+        
+    }
+
+    public void UpdateInfos()
+    {
         nameCard.text = cardSO.nameCard;
-        history.text = cardSO.history;
+        /*history.text = cardSO.history;
         effect.text = cardSO.effect;
         genre.text = cardSO.genre;
         type.text = cardSO.cardType.ToString();
@@ -34,14 +39,14 @@ public class CardInfos : MonoBehaviour
         splash.sprite = cardSO.splash;
         icon.sprite = cardSO.splash;
 
-        color = cardSO.color;
+        color = cardSO.color;*/
     }
 
     public void CardSelected()
     {
-        playerStats.damage += cardSO.damage / 100;
-        playerStats.staminaGain += cardSO.staminaGain / 100;
-        playerStats.moveSpeed += cardSO.moveSpeed / 100;
-        playerStats.currentLife += cardSO.life;
+        playerStats.damage += playerStats.damage * (cardSO.damagePercent / 100);
+        playerStats.dashUses += cardSO.dashUses;
+        playerStats.moveSpeed += cardSO.moveSpeedPercent / 100;
+        playerStats.currentLife += cardSO.heal;
     }
 }

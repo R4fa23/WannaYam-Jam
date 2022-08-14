@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463e28bf3d0f13f43b3135db522a80c5, type: 3}
   m_Name: 01
   m_EditorClassIdentifier: 
-  nameCard: 
+  nameCard: A E
   effect: 
   history: 
   genre: 
   cardType: 0
   icon: {fileID: 0}
-  splash: {fileID: 0}
+  splash: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   card: {fileID: 0}
   color: {r: 0, g: 0, b: 0, a: 0}
+  damage: 0
+  moveSpeed: 0
+  staminaGain: 0
+  life: 0
