@@ -51,4 +51,13 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Player")
+        {
+            LoadLevel();
+            playerStats.canMove = false;
+        }
+    }
+
 }
