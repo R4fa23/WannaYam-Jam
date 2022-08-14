@@ -28,7 +28,11 @@ public class CardInfos : MonoBehaviour
         genre.text = cardSO.genre;
         type.text = cardSO.cardType.ToString();
 
+        card.sprite = cardSO.card;
+        splash.sprite = cardSO.splash;
+        icon.sprite = cardSO.splash;
 
+        color = cardSO.color;
     }
 
 }
