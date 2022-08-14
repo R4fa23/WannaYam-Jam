@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463e28bf3d0f13f43b3135db522a80c5, type: 3}
   m_Name: 06
   m_EditorClassIdentifier: 
-  nameCard: 
+  nameCard: F
   effect: 
   history: 
   genre: 
@@ -21,3 +21,7 @@ MonoBehaviour:
   splash: {fileID: 0}
   card: {fileID: 0}
   color: {r: 0, g: 0, b: 0, a: 0}
+  damagePercent: 0
+  moveSpeedPercent: 0
+  dashUses: 0
+  heal: 0
