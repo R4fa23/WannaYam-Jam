@@ -41,6 +41,8 @@ public class PlayerStats : ScriptableObject
     [System.NonSerialized] public UnityEvent ChooseWeaponEvent;
     [System.NonSerialized] public UnityEvent DamageSpriteEvent;
     [System.NonSerialized] public UnityEvent DeathEvent;
+    [System.NonSerialized] public UnityEvent LevelCompleted;
+    [System.NonSerialized] public UnityEvent SelectCard;
 
     [Header("Inputs")]
     public bool attackPressing;
@@ -78,6 +80,8 @@ public class PlayerStats : ScriptableObject
         if (ChooseWeaponEvent == null) ChooseWeaponEvent = new UnityEvent();
         if (DamageSpriteEvent == null) DamageSpriteEvent = new UnityEvent();
         if (DeathEvent == null) DeathEvent = new UnityEvent();
+        if (LevelCompleted == null) LevelCompleted = new UnityEvent();
+        if (SelectCard == null) SelectCard = new UnityEvent();
     }
 
     public void DashTrigger()
@@ -106,6 +110,15 @@ public class PlayerStats : ScriptableObject
     public void DeathTrigger()
     {
         DeathEvent.Invoke();
+    }
+
+    public void LevelCompletedTrigger()
+    {
+        LevelCompleted.Invoke();
+    }
+    public void SelectCardTrigger()
+    {
+        SelectCard.Invoke();
     }
 
     public void ResetValues()

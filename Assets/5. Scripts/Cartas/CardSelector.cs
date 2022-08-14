@@ -17,9 +17,14 @@ public class CardSelector : MonoBehaviour
     int random1;
     int random2;
 
-    private void Start()
-    {
 
+    private void OnEnable()
+    {
+        playerStats.SelectCard.AddListener(OpenSelection);
+    }
+    private void OnDisable()
+    {
+        playerStats.SelectCard.RemoveListener(OpenSelection);
     }
 
     public void OpenSelection()
