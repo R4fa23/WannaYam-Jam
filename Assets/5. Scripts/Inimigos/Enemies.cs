@@ -10,7 +10,7 @@ public abstract class Enemies : MonoBehaviour
     [SerializeField] protected float AttackDist;
     [SerializeField] protected float AttackDelay;
     [SerializeField] protected int AttackStrenght;
-    Animator animator;
+    protected Animator animator;
     public bool TesteDeMorte;
 
 
@@ -210,7 +210,7 @@ public abstract class Enemies : MonoBehaviour
 
     }
 
-    public IEnumerator JumpBack()
+    public virtual IEnumerator JumpBack()
 
     {
         agent.enabled = false;
