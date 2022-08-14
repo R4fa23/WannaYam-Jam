@@ -70,7 +70,7 @@ public class EnemySpawner : MonoBehaviour
             if (waves[i].Wave.Count != 0 && waves[i].Wave[0] != null)
             {
                 int n = Random.Range(0, waves[i].Wave.Count);
-                Debug.Log(n);
+               // Debug.Log(n);
                 GameObject enemy = Instantiate(waves[i].Wave[n], SpawnPositions[Random.Range(0, SpawnPositions.Length)].position, Quaternion.identity);
                 enemy.GetComponent<Enemies>().starter(i, this, Player,Triangulation);
                 waves[i].Wave.RemoveAt(n);

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6687181815894552855}
   - component: {fileID: 7832231506007622623}
   - component: {fileID: -5828725276678527753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bug
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 6687181816154880703}
   - component: {fileID: 6687181816154880702}
   - component: {fileID: 6687181816154880701}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Texture
   m_TagString: Untagged
   m_Icon: {fileID: 0}

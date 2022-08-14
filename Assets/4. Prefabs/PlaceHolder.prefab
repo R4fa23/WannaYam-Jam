@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8385962511679939182}
   m_LocalRotation: {x: 0, y: 0.8660254, z: -0.5, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.15, z: 0}
   m_LocalScale: {x: 0.23, y: 0.23, z: 0.23}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3846018093981099296, guid: 84508368b713f7d47b8f8b0ccc0031ba, type: 3}
+  - {fileID: 2100000, guid: e16a79de43bb4af4f8bf5f0025c3c012, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 8385962511956486623}
   - component: {fileID: 8385962511956486621}
   - component: {fileID: 8385962511956486594}
+  - component: {fileID: 2045810417}
   m_Layer: 0
   m_Name: PlaceHolder
   m_TagString: Enemy
@@ -141,10 +142,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8385962511956486595}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.49, y: 1.69, z: 1.97}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &8385962511956486621
 NavMeshAgent:
@@ -181,9 +182,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Life: 10
-  FollowDist: 0
-  AttackDist: 10
-  AttackDelay: 1
+  FollowDist: 7
+  AttackDist: 4
+  AttackDelay: 0.3
   AttackStrenght: 2
   TesteDeMorte: 0
   state: 0
+  TimeOfBulletWave: 5
+  TimeOfCoolDown: 3
+--- !u!95 &2045810417
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8385962511956486595}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 464e0f0ec284a144997ff1b4be711f5a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
