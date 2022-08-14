@@ -38,9 +38,11 @@ public class PlayerManager : MonoBehaviour
             case PlayerStats.Weapon.Gun:
                 index = 0;
                 playerStats.attackSpeed = playerStats.armaLaserSpeed;
+                playerStats.damage = playerStats.armaLaser;
                 break;
             case PlayerStats.Weapon.Sword:
                 playerStats.attackSpeed = playerStats.espadaSpeed;
+                playerStats.damage = playerStats.espada;
                 index = 1;
                 break;
             case PlayerStats.Weapon.Lantern:

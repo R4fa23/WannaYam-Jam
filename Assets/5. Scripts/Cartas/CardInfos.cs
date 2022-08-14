@@ -44,9 +44,11 @@ public class CardInfos : MonoBehaviour
 
     public void CardSelected()
     {
-        playerStats.damage += playerStats.damage * (cardSO.damagePercent / 100);
-        playerStats.dashUses += cardSO.dashUses;
+        playerStats.damageMultiplier += cardSO.damagePercent / 100; 
         playerStats.moveSpeed += cardSO.moveSpeedPercent / 100;
+        playerStats.staminaGain += cardSO.staminaGainPercent / 100;
+        playerStats.attackSpeedMultiplier += cardSO.attackSpeedPercent / 100;
+        playerStats.dashUses += cardSO.dashUses;
         playerStats.currentLife += cardSO.heal;
     }
 }
