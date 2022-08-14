@@ -6,6 +6,7 @@ using TMPro;
 
 public class CardInfos : MonoBehaviour
 {
+    public PlayerStats playerStats;
     public CardSO cardSO;
     public TextMeshProUGUI nameCard;
     public TextMeshProUGUI history;
@@ -18,12 +19,18 @@ public class CardInfos : MonoBehaviour
     public Image card;
 
     public Color color;
-    
+
+      
 
     private void Start()
     {
+        
+    }
+
+    public void UpdateInfos()
+    {
         nameCard.text = cardSO.nameCard;
-        history.text = cardSO.history;
+        /*history.text = cardSO.history;
         effect.text = cardSO.effect;
         genre.text = cardSO.genre;
         type.text = cardSO.cardType.ToString();
@@ -32,7 +39,14 @@ public class CardInfos : MonoBehaviour
         splash.sprite = cardSO.splash;
         icon.sprite = cardSO.splash;
 
-        color = cardSO.color;
+        color = cardSO.color;*/
     }
 
+    public void CardSelected()
+    {
+        playerStats.damage += playerStats.damage * (cardSO.damagePercent / 100);
+        playerStats.dashUses += cardSO.dashUses;
+        playerStats.moveSpeed += cardSO.moveSpeedPercent / 100;
+        playerStats.currentLife += cardSO.heal;
+    }
 }
