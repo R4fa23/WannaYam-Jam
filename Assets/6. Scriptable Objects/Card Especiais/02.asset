@@ -12,16 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463e28bf3d0f13f43b3135db522a80c5, type: 3}
   m_Name: 02
   m_EditorClassIdentifier: 
-  nameCard: B E
-  effect: 
-  history: 
-  genre: 
-  cardType: 0
-  icon: {fileID: 0}
-  splash: {fileID: -225535519, guid: 1f647ee0bb07a204da05116440202d43, type: 3}
-  card: {fileID: 0}
+  nameCard: Swan eyes
+  effect: Gives you 30% movement speed
+  history: Your look at your enemy, using your best deadly stare in hopes that they
+    would cower beneath him and end their on misery! But instead all they do is smile
+    at you and punch each other. Batting your eyes at them made them so dazed that
+    they started fighting each other, you are not going to complain.
+  genre: Dating simulator
+  cardType: 1
+  icon: {fileID: 21300000, guid: a0b76100ae471874d9b2fe40280af20c, type: 3}
+  splash: {fileID: 107864986, guid: d5fe133a0fefb804ba78fc2a70db505f, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0}
-  damage: 0
-  moveSpeed: 0
-  staminaGain: 0
-  life: 0
+  damagePercent: 0
+  moveSpeedPercent: 30
+  staminaGainPercent: 0
+  attackSpeedPercent: 0
+  dashUses: 0
+  heal: 0

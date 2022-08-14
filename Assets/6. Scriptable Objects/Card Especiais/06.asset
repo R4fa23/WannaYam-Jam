@@ -12,12 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463e28bf3d0f13f43b3135db522a80c5, type: 3}
   m_Name: 06
   m_EditorClassIdentifier: 
-  nameCard: 
-  effect: 
-  history: 
-  genre: 
-  cardType: 0
+  nameCard: Yummy duck
+  effect: Receive 2 dashs
+  history: "Yummy! So many fruits showed up on the room, the make you remember how
+    hungry you are and how you haven\u2019t eaten anything since you were put here,
+    so you eat them until none is left, the weird part is that the moment you bite
+    the last fruit all the enemies get dazed. - Getting all the fruits in the level
+    stun the enemies for a few seconds"
+  genre: Arcade
+  cardType: 1
   icon: {fileID: 0}
-  splash: {fileID: 0}
-  card: {fileID: 0}
+  splash: {fileID: -413160149, guid: a3e1eeec90f5e054aa78b8f2e0264e8b, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0}
+  damagePercent: 0
+  moveSpeedPercent: 0
+  staminaGainPercent: 0
+  attackSpeedPercent: 0
+  dashUses: 2
+  heal: 0

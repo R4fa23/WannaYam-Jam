@@ -12,16 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463e28bf3d0f13f43b3135db522a80c5, type: 3}
   m_Name: 02
   m_EditorClassIdentifier: 
-  nameCard: B C
-  effect: 
-  history: 
-  genre: 
+  nameCard: Ducksferatu
+  effect: Gets 20 of your health back
+  history: Oh no! You gained the terrible ability of drinking blood through you delicate
+    beak! This horrible world turned you into a monster and now all you can do is
+    use this terrible skill to suck life out of your enemies.
+  genre: Horror
   cardType: 0
-  icon: {fileID: 0}
-  splash: {fileID: -1275303841, guid: e34a41515548080479cb515e98978bdb, type: 3}
-  card: {fileID: 0}
+  icon: {fileID: 21300000, guid: d85ffb664fb6db543a2f0e0501691b01, type: 3}
+  splash: {fileID: 1267693750, guid: a3e1eeec90f5e054aa78b8f2e0264e8b, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0}
-  damage: 0
-  moveSpeed: 0
-  staminaGain: 0
-  life: 0
+  damagePercent: 0
+  moveSpeedPercent: 0
+  staminaGainPercent: 0
+  attackSpeedPercent: 0
+  dashUses: 0
+  heal: 20

@@ -12,16 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463e28bf3d0f13f43b3135db522a80c5, type: 3}
   m_Name: 01
   m_EditorClassIdentifier: 
-  nameCard: A E
-  effect: 
-  history: 
-  genre: 
-  cardType: 0
-  icon: {fileID: 0}
-  splash: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  card: {fileID: 0}
+  nameCard: Egg bomb
+  effect: Gives you more 15% damage and 15% more damage speed
+  history: You feel weird, almost as if you ate something rotten, just like that
+    time stupid geese Tim convinced you to eat a rotten banana! You decide to run
+    and dodge to see if the sensation passes, weirdly it does, but where you were
+    before sits a grenade! You are not ready for fatherhood, so you just lets it
+    explode.
+  genre: FPS
+  cardType: 1
+  icon: {fileID: 21300000, guid: e98b1bb743d56634f85f0eccf6cda065, type: 3}
+  splash: {fileID: 199448877, guid: a3e1eeec90f5e054aa78b8f2e0264e8b, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0}
-  damage: 0
-  moveSpeed: 0
-  staminaGain: 0
-  life: 0
+  damagePercent: 15
+  moveSpeedPercent: 0
+  staminaGainPercent: 0
+  attackSpeedPercent: 15
+  dashUses: 0
+  heal: 0

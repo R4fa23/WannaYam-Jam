@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463e28bf3d0f13f43b3135db522a80c5, type: 3}
   m_Name: 07
   m_EditorClassIdentifier: 
-  nameCard: 
-  effect: 
-  history: 
-  genre: 
-  cardType: 0
-  icon: {fileID: 0}
-  splash: {fileID: 0}
-  card: {fileID: 0}
+  nameCard: Unstoppable
+  effect: 15% more damage and 15% more attack speed
+  history: "You\u2019re on fire baby! Well, not literally of course, you are not
+    ready to become dinner. What is really happening that your hits started to get
+    so fast that they start to do more damage!"
+  genre: Fight
+  cardType: 1
+  icon: {fileID: 21300000, guid: b489efde28aaf6d4b992ef5ab43b4aa3, type: 3}
+  splash: {fileID: 212310526, guid: a3e1eeec90f5e054aa78b8f2e0264e8b, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0}
+  damagePercent: 15
+  moveSpeedPercent: 0
+  staminaGainPercent: 0
+  attackSpeedPercent: 15
+  dashUses: 0
+  heal: 0
