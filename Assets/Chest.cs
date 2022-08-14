@@ -24,6 +24,7 @@ public class Chest : MonoBehaviour
     public void OpenChest()
     {
         chest.SetActive(true);
+        gameObject.GetComponent<BoxCollider>().isTrigger = true;
         gameObject.GetComponent<BoxCollider>().enabled = true;
     }
 

@@ -37,10 +37,14 @@ public class CardSelector : MonoBehaviour
 
     IEnumerator OpeningSelectionTimer()
     {
-        Debug.Log("OpenSelection IENUM");
-        yield return new WaitForSeconds(1f);
-        Debug.Log("OpenSelection IENUM DELAY");
         WichCardType();
+
+        yield return new WaitForSeconds(2f);
+
+        foreach (var card in cardsToSelect)
+        {
+            card.GetComponent<Animator>().SetTrigger("TurnCardUp");
+        }
     }
 
     IEnumerator ClosingSelection()
@@ -50,7 +54,7 @@ public class CardSelector : MonoBehaviour
             card.GetComponent<Animator>().SetTrigger("TurnCardDown");
         }
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
 
         playerStats.canMove = true;
         selectScreen.SetActive(false);
@@ -59,6 +63,7 @@ public class CardSelector : MonoBehaviour
 
     public void ClickedCard()
     {
+        Debug.Log("cliked");
         StartCoroutine(SelectAndFlipCard());
     }
 
@@ -68,10 +73,14 @@ public class CardSelector : MonoBehaviour
         {
             card.GetComponent<Animator>().SetTrigger("TurnCardDown");
         }
+        WichCardType();
 
         yield return new WaitForSeconds(1f);
 
-        WichCardType();       
+        foreach (var card in cardsToSelect)
+        {
+            card.GetComponent<Animator>().SetTrigger("TurnCardUp");
+        }
     }
 
     public void WichCardType()
@@ -99,7 +108,7 @@ public class CardSelector : MonoBehaviour
             if (i == 0) 
             {
                 cardsToSelect[i].cardSO = selectedSO;
-                cardsToSelect[i].UpdateInfos();
+                //cardsToSelect[i].UpdateInfos();
             }
         }
 
@@ -116,7 +125,7 @@ public class CardSelector : MonoBehaviour
             if (i == 1)
             {
                 cardsToSelect[i].cardSO = selectedSO;
-                cardsToSelect[i].UpdateInfos();
+                //cardsToSelect[i].UpdateInfos();
             }
         }
         stage++;
