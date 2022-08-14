@@ -6,6 +6,7 @@ using TMPro;
 
 public class CardInfos : MonoBehaviour
 {
+    public PlayerStats playerStats;
     public CardSO cardSO;
     public TextMeshProUGUI nameCard;
     public TextMeshProUGUI history;
@@ -18,7 +19,8 @@ public class CardInfos : MonoBehaviour
     public Image card;
 
     public Color color;
-    
+
+      
 
     private void Start()
     {
@@ -35,4 +37,11 @@ public class CardInfos : MonoBehaviour
         color = cardSO.color;
     }
 
+    public void CardSelected()
+    {
+        playerStats.damage += cardSO.damage / 100;
+        playerStats.staminaGain += cardSO.staminaGain / 100;
+        playerStats.moveSpeed += cardSO.moveSpeed / 100;
+        playerStats.currentLife += cardSO.life;
+    }
 }

@@ -40,7 +40,7 @@ public class SceneLoader : MonoBehaviour
                 break;
         }
 
-        int randomLevel = Random.Range(0, levelToLoad.Length);
+        int randomLevel = Random.Range(0, levelToLoad.Length+1);
 
         for (int i = 0; i < levelToLoad.Length; i++)
         {

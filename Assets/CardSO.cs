@@ -17,7 +17,10 @@ public class CardSO : ScriptableObject
     public Sprite icon;
     public Sprite splash;
     public Sprite card;
-
-
     public Color color;
+
+    public float damage;
+    public float moveSpeed;
+    public float staminaGain;
+    public float life;
 }
