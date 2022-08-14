@@ -13,6 +13,7 @@ public class SceneLoader : MonoBehaviour
 
     string[] levelToLoad;
 
+    [SerializeField] Animator animator;
     [SerializeField] PlayerStats playerStats;
 
     public void LoadLevel()
@@ -49,6 +50,11 @@ public class SceneLoader : MonoBehaviour
                 SceneManager.LoadScene(levelToLoad[i].ToString());
             }
         }
+    }
+
+    public void OpenDoor()
+    {
+        animator.SetTrigger("open");
     }
 
     private void OnTriggerEnter(Collider other)
