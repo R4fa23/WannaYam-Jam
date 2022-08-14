@@ -21,7 +21,7 @@ MonoBehaviour:
   genre: FPS
   cardType: 0
   icon: {fileID: 21300000, guid: e98b1bb743d56634f85f0eccf6cda065, type: 3}
-  splash: {fileID: -2110985274, guid: e34a41515548080479cb515e98978bdb, type: 3}
+  splash: {fileID: 2105978361, guid: d5fe133a0fefb804ba78fc2a70db505f, type: 3}
   color: {r: 1, g: 1, b: 1, a: 0}
   damagePercent: 20
   moveSpeedPercent: 0

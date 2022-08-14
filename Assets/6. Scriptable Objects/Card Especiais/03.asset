@@ -22,7 +22,7 @@ MonoBehaviour:
   genre: Kart
   cardType: 1
   icon: {fileID: 21300000, guid: a350ac0ae76d13e49b7c4f4dced483a6, type: 3}
-  splash: {fileID: -967052104, guid: 1f647ee0bb07a204da05116440202d43, type: 3}
+  splash: {fileID: -1454737032, guid: d5fe133a0fefb804ba78fc2a70db505f, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0}
   damagePercent: 0
   moveSpeedPercent: 15

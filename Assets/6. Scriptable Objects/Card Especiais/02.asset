@@ -21,7 +21,7 @@ MonoBehaviour:
   genre: Dating simulator
   cardType: 1
   icon: {fileID: 21300000, guid: a0b76100ae471874d9b2fe40280af20c, type: 3}
-  splash: {fileID: -225535519, guid: 1f647ee0bb07a204da05116440202d43, type: 3}
+  splash: {fileID: 107864986, guid: d5fe133a0fefb804ba78fc2a70db505f, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0}
   damagePercent: 0
   moveSpeedPercent: 30

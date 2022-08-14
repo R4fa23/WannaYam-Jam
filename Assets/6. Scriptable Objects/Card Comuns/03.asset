@@ -20,7 +20,7 @@ MonoBehaviour:
   genre: Survival
   cardType: 0
   icon: {fileID: 21300000, guid: b4f7e23276cf83343877a51054a7d4fa, type: 3}
-  splash: {fileID: -1023830493, guid: e34a41515548080479cb515e98978bdb, type: 3}
+  splash: {fileID: 1545236294, guid: d5fe133a0fefb804ba78fc2a70db505f, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0}
   damagePercent: 0
   moveSpeedPercent: 10
