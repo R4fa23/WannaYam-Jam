@@ -13,13 +13,14 @@ public class PlayerStats : ScriptableObject
     public float maxlife;
     [HideInInspector] public float currentLife;
     public float damage;
+    public float damageMultiplier;
     public float maxstamina;
     [HideInInspector] public float currentStamina;
     public float staminaGain;
     public float dashUses;
     [HideInInspector] public float attackSpeed;
     [HideInInspector] public bool dead;
-     public float attackSpeedMultiplier;
+    public float attackSpeedMultiplier;
     public float moveSpeed;
     [HideInInspector] public bool canTakeDamage;
 
@@ -123,5 +124,6 @@ public class PlayerStats : ScriptableObject
         dontUpdateSprites = false;
         dead = false;
         wichLevel = 0;
+        damageMultiplier = 1;
     }
 }
