@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class EnemySpawner : MonoBehaviour
 {
 
-
+    
     public Transform[] SpawnPositions;
     public List<Waves> waves = new List<Waves>();
     public List<int> DeadEnemies = new List<int>();
@@ -26,6 +26,10 @@ public class EnemySpawner : MonoBehaviour
             DeadEnemies[waves.IndexOf(wavequant)] = wavequant.Wave.Count;
         }
       enableSpawn = true;
+        foreach (Transform anima in SpawnPositions)
+        {
+            anima.gameObject.GetComponent<Animator>().SetTrigger("Open");
+        }
         
 
     }
@@ -77,13 +81,24 @@ public class EnemySpawner : MonoBehaviour
 
 
             }
-            else { Debug.Log("Aguardando proxima onda"); }
+            else { 
+                
+                
+                
+                Debug.Log("Aguardando proxima onda"); }
 
 
         }
         
         else
-        { Debug.Log("Acabou a fase"); }
+        { Debug.Log("Acabou a fase");
+
+
+            foreach (Transform anima in SpawnPositions)
+            {
+                anima.gameObject.GetComponent<Animator>().SetTrigger("Close");
+            }
+        }
        
                    
 
