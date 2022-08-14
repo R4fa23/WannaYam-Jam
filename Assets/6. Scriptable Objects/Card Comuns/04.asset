@@ -12,16 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463e28bf3d0f13f43b3135db522a80c5, type: 3}
   m_Name: 04
   m_EditorClassIdentifier: 
-  nameCard: D
-  effect: 
-  history: 
-  genre: 
+  nameCard: Lake date
+  effect: Heals 10 of your life and gives 10% more speed
+  history: Suddenly your mind wanders to your first love, the most beautiful duck
+    around, his name was Tutu, men he had brown feathers he was awesome. The sweet
+    memory of his beak fills you with determination to dodge you enemies attack!
+  genre: Dating Simulator
   cardType: 0
-  icon: {fileID: 0}
-  splash: {fileID: 0}
-  card: {fileID: 0}
+  icon: {fileID: 21300000, guid: a0b76100ae471874d9b2fe40280af20c, type: 3}
+  splash: {fileID: -1153125493, guid: a3e1eeec90f5e054aa78b8f2e0264e8b, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0}
   damagePercent: 0
-  moveSpeedPercent: 0
+  moveSpeedPercent: 10
+  staminaGainPercent: 0
+  attackSpeedPercent: 0
   dashUses: 0
-  heal: 0
+  heal: 10

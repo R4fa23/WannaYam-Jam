@@ -12,16 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463e28bf3d0f13f43b3135db522a80c5, type: 3}
   m_Name: 05
   m_EditorClassIdentifier: 
-  nameCard: E
-  effect: 
-  history: 
-  genre: 
+  nameCard: Fast and duckrious
+  effect: Gain one more dash
+  history: Every Time you try walking somewhere you feel yourself gaining more and
+    more energy, you can swear that a stamina bar shows up on the corner of your
+    vision and it starts filling up super fast.
+  genre: Kart
   cardType: 0
-  icon: {fileID: 0}
-  splash: {fileID: 0}
-  card: {fileID: 0}
+  icon: {fileID: 21300000, guid: a350ac0ae76d13e49b7c4f4dced483a6, type: 3}
+  splash: {fileID: -1668272414, guid: a3e1eeec90f5e054aa78b8f2e0264e8b, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0}
   damagePercent: 0
   moveSpeedPercent: 0
-  dashUses: 0
+  staminaGainPercent: 0
+  attackSpeedPercent: 0
+  dashUses: 1
   heal: 0

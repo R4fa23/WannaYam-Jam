@@ -12,15 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463e28bf3d0f13f43b3135db522a80c5, type: 3}
   m_Name: 01
   m_EditorClassIdentifier: 
-  nameCard: A C
-  effect: 
-  history: 
-  genre: 
+  nameCard: Iron feathers
+  effect: Increases your damage by 20%
+  history: "Suddenly your feathers feel so heavy! It\u2019s like you\u2019re carrying
+    the weight of the world in you little body! Of course none of this is happening,
+    they are just fusing to your weapon and oh boy, that's making you feel so powerful,
+    not even the idiot geese back home can stop you now!"
+  genre: FPS
   cardType: 0
-  icon: {fileID: 21300000, guid: c6c58c06d56abd941bc4e62a598305e4, type: 3}
+  icon: {fileID: 21300000, guid: e98b1bb743d56634f85f0eccf6cda065, type: 3}
   splash: {fileID: -2110985274, guid: e34a41515548080479cb515e98978bdb, type: 3}
   color: {r: 1, g: 1, b: 1, a: 0}
-  damagePercent: 0
+  damagePercent: 20
   moveSpeedPercent: 0
+  staminaGainPercent: 0
+  attackSpeedPercent: 0
   dashUses: 0
   heal: 0

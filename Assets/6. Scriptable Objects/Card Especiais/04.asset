@@ -12,12 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463e28bf3d0f13f43b3135db522a80c5, type: 3}
   m_Name: 04
   m_EditorClassIdentifier: 
-  nameCard: 
-  effect: 
-  history: 
-  genre: 
+  nameCard: "A ninja\u2019s quack"
+  effect: 30% more speed movement
+  history: This may sound like a lie, but you have a cousin that trained to be a
+    ninja and when you two were little ducklings, he said that he blessed you with
+    the ninja quack which would give you powers! Of course you thought it as a joke,
+    but when you started turning invisible after killing an enemy, you started to
+    think that maybe your cousin was telling the truth
+  genre: Stealth
   cardType: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 84d555d433783194e90f778aa846b314, type: 3}
   splash: {fileID: 0}
-  card: {fileID: 0}
   color: {r: 0, g: 0, b: 0, a: 0}
+  damagePercent: 0
+  moveSpeedPercent: 30
+  staminaGainPercent: 0
+  attackSpeedPercent: 0
+  dashUses: 0
+  heal: 0

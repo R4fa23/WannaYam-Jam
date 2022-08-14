@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463e28bf3d0f13f43b3135db522a80c5, type: 3}
   m_Name: 07
   m_EditorClassIdentifier: 
-  nameCard: 
-  effect: 
-  history: 
-  genre: 
+  nameCard: Paw-kicking stance
+  effect: Gives you 20% more damage
+  history: "All your hits start to get fast! So fast that you swear they are getting
+    a bit blurry, maybe you should get your eyes checked out\u2026 Well, doesn\u2019t
+    matter now, you enemies won\u2019t see what hit them now!"
+  genre: Fight
   cardType: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: b489efde28aaf6d4b992ef5ab43b4aa3, type: 3}
   splash: {fileID: 0}
-  card: {fileID: 0}
   color: {r: 0, g: 0, b: 0, a: 0}
+  damagePercent: 20
+  moveSpeedPercent: 0
+  staminaGainPercent: 0
+  attackSpeedPercent: 0
+  dashUses: 0
+  heal: 0

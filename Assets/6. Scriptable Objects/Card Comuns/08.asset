@@ -12,12 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463e28bf3d0f13f43b3135db522a80c5, type: 3}
   m_Name: 08
   m_EditorClassIdentifier: 
-  nameCard: 
-  effect: 
-  history: 
-  genre: 
+  nameCard: A hard nut to quack
+  effect: Gives 10 more damage and 10% more attack
+  history: "A duck with a shield does sounds like a joke a geese would tell, but
+    it\u2019s not! Congratulations on your new shining shield and protect yourself!"
+  genre: RPG
   cardType: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 3e88f8d2ec548d242bc6dc534a8055c4, type: 3}
   splash: {fileID: 0}
-  card: {fileID: 0}
   color: {r: 0, g: 0, b: 0, a: 0}
+  damagePercent: 10
+  moveSpeedPercent: 0
+  staminaGainPercent: 0
+  attackSpeedPercent: 10
+  dashUses: 0
+  heal: 0
