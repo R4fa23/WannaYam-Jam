@@ -11,6 +11,12 @@ public class DealDamage : MonoBehaviour
         if(other.tag == "Enemy")
         {
             other.GetComponent<Enemies>().Dano(PlayerStats.damage);
+            if (gameObject.tag == "Bullet") gameObject.SetActive(false);
+        }
+
+        if(other.tag == "Wall" && gameObject.tag == "Bullet")
+        {
+            gameObject.SetActive(false);
         }
     }
 }
