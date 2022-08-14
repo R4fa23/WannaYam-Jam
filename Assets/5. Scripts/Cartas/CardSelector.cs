@@ -19,8 +19,7 @@ public class CardSelector : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("Start");
-        OpenSelection();
+
     }
 
     public void OpenSelection()
