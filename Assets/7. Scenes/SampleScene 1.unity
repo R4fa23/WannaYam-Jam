@@ -423,8 +423,8 @@ GameObject:
   m_Name: Plane
   m_TagString: Floor
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 127
   m_IsActive: 1
 --- !u!64 &355357603
 MeshCollider:
@@ -1209,96 +1209,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1245149825 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1337118291365026577, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-    type: 3}
-  m_PrefabInstance: {fileID: 1295585776}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1295585776
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1337118291365026570, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 1337118291365026570, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 1337118291365026570, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 1337118291365026570, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1337118291365026570, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1337118291365026570, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1337118291365026570, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1337118291365026570, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1337118291365026570, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1337118291365026570, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1337118291365026570, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1337118291365026577, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_Name
-      value: Glitch
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078386752886357560, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078386752886357560, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078386752886357560, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0cc7039f2cf79144f9d9e8197b79fa00, type: 3}
 --- !u!1001 &1376988860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1545,12 +1455,14 @@ PrefabInstance:
         type: 3}
       propertyPath: waves.Array.data[1].Wave.Array.data[0]
       value: 
-      objectReference: {fileID: 1245149825}
+      objectReference: {fileID: 1337118291365026577, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
+        type: 3}
     - target: {fileID: 3067524834757404856, guid: 7ef3d00e5d7473b4484f081739748f89,
         type: 3}
       propertyPath: waves.Array.data[1].Wave.Array.data[1]
       value: 
-      objectReference: {fileID: 1245149825}
+      objectReference: {fileID: 1337118291365026577, guid: 0cc7039f2cf79144f9d9e8197b79fa00,
+        type: 3}
     - target: {fileID: 3067524834757404856, guid: 7ef3d00e5d7473b4484f081739748f89,
         type: 3}
       propertyPath: waves.Array.data[1].Wave.Array.data[2]

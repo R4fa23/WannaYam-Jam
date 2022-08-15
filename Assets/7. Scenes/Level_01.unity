@@ -5,7 +5,7 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 5
+    smallestOccluder: 0.93
     smallestHole: 0.25
     backfaceThreshold: 100
   m_SceneGUID: 00000000000000000000000000000000
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 309928143}
-  m_IndirectSpecularColor: {r: 0.17276813, g: 0.21589187, b: 0.29782563, a: 1}
+  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: ce6c1c0f05706ca48ac35b097453c6fc,
+    type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 676050a8129efcf499a13b692ed54639,
     type: 2}
 --- !u!196 &4
@@ -193,6 +194,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -200,6 +206,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (103)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -884,6 +900,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -891,6 +912,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (88)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -988,6 +1019,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -995,6 +1031,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (96)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -1262,7 +1308,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e1c1bc1deb4e59e4ba069146efd31dad,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 119
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1c1bc1deb4e59e4ba069146efd31dad, type: 3}
@@ -1773,7 +1819,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e1c1bc1deb4e59e4ba069146efd31dad,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 119
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1c1bc1deb4e59e4ba069146efd31dad, type: 3}
@@ -1857,7 +1903,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e1c1bc1deb4e59e4ba069146efd31dad,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 119
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1c1bc1deb4e59e4ba069146efd31dad, type: 3}
@@ -1930,6 +1976,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -1937,6 +1988,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (120)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -2009,6 +2070,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -2016,6 +2082,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -2163,6 +2239,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -2170,6 +2251,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (107)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -2326,6 +2417,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -2333,6 +2429,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -2405,6 +2511,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -2412,6 +2523,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -2568,6 +2689,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -2575,6 +2701,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -2647,6 +2783,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -2654,6 +2795,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -3067,6 +3218,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -3074,6 +3230,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (125)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -3146,6 +3312,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e96c3f2e02ed49f47951312705141323, type: 2}
@@ -3153,6 +3324,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -3392,6 +3573,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -3399,6 +3585,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -3409,6 +3605,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1975825709}
     m_Modifications:
+    - target: {fileID: 2061067188950526851, guid: 10b83033d79e46d40a3f2dae19d9210f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061067188950526851, guid: 10b83033d79e46d40a3f2dae19d9210f,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5901798588765359286, guid: 10b83033d79e46d40a3f2dae19d9210f,
         type: 3}
       propertyPath: m_Name
@@ -3565,6 +3771,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -3572,6 +3783,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -4496,6 +4717,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -4503,6 +4729,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (126)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -4575,6 +4811,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -4582,6 +4823,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -4679,6 +4930,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -4686,6 +4942,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (124)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -4928,6 +5194,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MidWallTop
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77f286dc784da6e4ea93aa9315a9d10d,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77f286dc784da6e4ea93aa9315a9d10d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f286dc784da6e4ea93aa9315a9d10d, type: 3}
@@ -5199,6 +5475,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -5206,6 +5487,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -5278,6 +5569,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -5285,6 +5581,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -5432,6 +5738,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -5439,6 +5750,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (121)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -5516,8 +5837,18 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
     - target: {fileID: 964814396855526314, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 964814396855526314, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1401918727707611669, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1401918727707611669, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
@@ -5531,8 +5862,18 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
     - target: {fileID: 1705291532166719779, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705291532166719779, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419884495305691572, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2419884495305691572, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
@@ -5561,8 +5902,18 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
     - target: {fileID: 3224413307877665520, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224413307877665520, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3666112000204215585, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3666112000204215585, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
@@ -5574,6 +5925,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
+    - target: {fileID: 4155050304649481356, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4155050304649481356, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5611,13 +5967,28 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
     - target: {fileID: 5364200570857920031, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364200570857920031, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5371996865417736972, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5371996865417736972, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863926167695918034, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5863926167695918034, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
@@ -5636,8 +6007,18 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
     - target: {fileID: 6017862699319530670, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6017862699319530670, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384418703253759719, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6384418703253759719, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
@@ -5646,8 +6027,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6395846417603891478, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395846417603891478, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862232549197456647, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6862232549197456647, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
@@ -5656,13 +6047,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6946469674983216119, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946469674983216119, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7518825198656228864, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7518825198656228864, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664136739430321647, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7664136739430321647, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
@@ -5679,6 +6085,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
+    - target: {fileID: 8211126524371268937, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8211126524371268937, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5958,6 +6369,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -5965,6 +6381,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (116)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -6389,6 +6815,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -6396,6 +6827,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -6562,6 +7003,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -6569,6 +7015,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (128)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -6697,6 +7153,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -6704,6 +7165,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (117)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -6776,6 +7247,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -6783,6 +7259,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (102)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -7433,6 +7919,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -7440,6 +7931,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -7512,6 +8013,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -7519,6 +8025,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -7591,6 +8107,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -7598,6 +8119,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -7695,6 +8226,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -7702,6 +8238,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -7774,6 +8320,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -7781,6 +8332,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -7853,6 +8414,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -7860,6 +8426,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -7932,6 +8508,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -7939,6 +8520,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -8206,6 +8797,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: MidWallTop (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77f286dc784da6e4ea93aa9315a9d10d,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77f286dc784da6e4ea93aa9315a9d10d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 95
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f286dc784da6e4ea93aa9315a9d10d, type: 3}
 --- !u!1 &507146745 stripped
@@ -8302,6 +8903,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -8309,6 +8915,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -8406,6 +9022,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46640fc884d057648adae6394f198758, type: 2}
@@ -8413,6 +9034,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -8882,6 +9513,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -8889,6 +9525,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -8961,6 +9607,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -8968,6 +9619,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -9040,6 +9701,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -9047,6 +9713,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -9119,6 +9795,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -9126,6 +9807,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -9391,6 +10082,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -9398,6 +10094,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -9803,6 +10509,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -9810,6 +10521,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (108)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -9966,6 +10687,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -9973,6 +10699,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -10129,6 +10865,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -10136,6 +10877,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (113)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -10243,7 +10994,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -10323,6 +11074,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -10330,6 +11086,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -10670,6 +11436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -10677,6 +11448,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (112)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -10883,6 +11664,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -10890,6 +11676,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -11347,6 +12143,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -11354,6 +12155,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (109)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -11437,7 +12248,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e1c1bc1deb4e59e4ba069146efd31dad,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 119
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1c1bc1deb4e59e4ba069146efd31dad, type: 3}
@@ -12054,6 +12865,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -12061,6 +12877,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -12460,6 +13286,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -12467,6 +13298,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (127)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -13149,6 +13990,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -13156,6 +14002,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -13253,6 +14109,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -13260,6 +14121,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -13560,7 +14431,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -13640,6 +14511,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -13647,6 +14523,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -13840,6 +14726,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -13847,6 +14738,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -14002,6 +14903,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -14009,6 +14915,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (97)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -14106,6 +15022,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -14113,6 +15034,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (115)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -14210,6 +15141,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -14217,6 +15153,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -14373,6 +15319,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -14380,6 +15331,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -14452,6 +15413,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -14459,6 +15425,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -14606,6 +15582,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -14613,6 +15594,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -14769,6 +15760,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -14776,6 +15772,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -14848,6 +15854,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -14855,6 +15866,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -14938,7 +15959,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e1c1bc1deb4e59e4ba069146efd31dad,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 119
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1c1bc1deb4e59e4ba069146efd31dad, type: 3}
@@ -15013,6 +16034,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MidWallTop (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77f286dc784da6e4ea93aa9315a9d10d,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77f286dc784da6e4ea93aa9315a9d10d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 95
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f286dc784da6e4ea93aa9315a9d10d, type: 3}
@@ -15386,6 +16417,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -15393,6 +16429,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (101)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -15512,6 +16558,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1975825709}
     m_Modifications:
+    - target: {fileID: 2061067188950526851, guid: 10b83033d79e46d40a3f2dae19d9210f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061067188950526851, guid: 10b83033d79e46d40a3f2dae19d9210f,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5901798588765359286, guid: 10b83033d79e46d40a3f2dae19d9210f,
         type: 3}
       propertyPath: m_Name
@@ -15645,6 +16701,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MidWallTop (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77f286dc784da6e4ea93aa9315a9d10d,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77f286dc784da6e4ea93aa9315a9d10d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 95
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f286dc784da6e4ea93aa9315a9d10d, type: 3}
@@ -15800,6 +16866,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -15807,6 +16878,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -15904,6 +16985,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -15911,6 +16997,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -15983,6 +17079,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -15990,6 +17091,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (105)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -16339,6 +17450,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -16346,6 +17462,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -16502,6 +17628,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -16509,6 +17640,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -16631,6 +17772,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -16638,6 +17784,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -16710,6 +17866,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -16717,6 +17878,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -16814,6 +17985,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -16821,6 +17997,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -17037,7 +18223,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -17117,6 +18303,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -17124,6 +18315,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -17280,6 +18481,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -17287,6 +18493,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -17839,6 +19055,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -17846,6 +19067,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (104)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -17918,6 +19149,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -17925,6 +19161,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (111)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -18165,6 +19411,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -18172,6 +19423,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (106)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -18328,6 +19589,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -18335,6 +19601,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -18538,6 +19814,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1975825709}
     m_Modifications:
+    - target: {fileID: 2061067188950526851, guid: 10b83033d79e46d40a3f2dae19d9210f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061067188950526851, guid: 10b83033d79e46d40a3f2dae19d9210f,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5901798588765359286, guid: 10b83033d79e46d40a3f2dae19d9210f,
         type: 3}
       propertyPath: m_Name
@@ -19114,6 +20400,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -19121,6 +20412,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -19228,7 +20529,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -19417,6 +20718,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -19424,6 +20730,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -19654,6 +20970,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 609219428035687360, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 609219428035687360, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -19714,14 +21035,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 912706720640846070, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 912706720640846070, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
+    - target: {fileID: 964814396855526314, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 964814396855526314, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1401918727707611669, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1401918727707611669, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613214340237623935, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1613214340237623935, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
+    - target: {fileID: 1705291532166719779, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705291532166719779, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419884495305691572, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419884495305691572, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2497606963604319577, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2497606963604319577, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19731,6 +21107,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017509609026335988, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3017509609026335988, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
@@ -19762,11 +21143,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -94.88
       objectReference: {fileID: 0}
+    - target: {fileID: 3224413307877665520, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224413307877665520, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3666112000204215585, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3666112000204215585, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4017095014490868517, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4017095014490868517, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
+    - target: {fileID: 4155050304649481356, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155050304649481356, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221513668652986465, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4221513668652986465, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19774,9 +21195,19 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
     - target: {fileID: 4871485825250182962, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4871485825250182962, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
+    - target: {fileID: 4882570628685869251, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4882570628685869251, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19784,9 +21215,19 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
     - target: {fileID: 4916646930251384018, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916646930251384018, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
+    - target: {fileID: 5225092893352146299, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5225092893352146299, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19794,9 +21235,49 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
     - target: {fileID: 5359325027702252039, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359325027702252039, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
+    - target: {fileID: 5364200570857920031, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364200570857920031, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5371996865417736972, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5371996865417736972, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863926167695918034, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863926167695918034, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868625238677305290, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5868625238677305290, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19804,18 +21285,98 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
     - target: {fileID: 5876589345662816985, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876589345662816985, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
+    - target: {fileID: 6017862699319530670, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6017862699319530670, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384418703253759719, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384418703253759719, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395846417603891478, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395846417603891478, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6497297244391364968, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.41
       objectReference: {fileID: 0}
+    - target: {fileID: 6862232549197456647, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862232549197456647, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946469674983216119, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946469674983216119, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7139308228614640826, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7518825198656228864, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7518825198656228864, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664136739430321647, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664136739430321647, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706560982809597084, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7706560982809597084, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
@@ -19824,14 +21385,39 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
     - target: {fileID: 8168553023277919290, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8168553023277919290, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
+    - target: {fileID: 8211126524371268937, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211126524371268937, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 127
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311612871570534357, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8311612871570534357, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
+    - target: {fileID: 8891844188720230946, guid: e23a739f9076f954985bb405aa662b2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8891844188720230946, guid: e23a739f9076f954985bb405aa662b2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19908,6 +21494,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -19915,6 +21506,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -20027,6 +21628,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1c1bc1deb4e59e4ba069146efd31dad, type: 3}
+--- !u!1 &1425403346 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 762368946683064590, guid: b5f1ff7e6b4c79448a24698138f9d8fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 381903647}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1428435662 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e1c1bc1deb4e59e4ba069146efd31dad,
@@ -20121,6 +21728,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -20128,6 +21740,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -20339,6 +21961,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -20346,6 +21973,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -20418,6 +22055,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -20425,6 +22067,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -20606,6 +22258,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -20613,6 +22270,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -20685,6 +22352,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -20692,6 +22364,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (93)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -20824,7 +22506,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -20999,7 +22681,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e1c1bc1deb4e59e4ba069146efd31dad,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 119
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1c1bc1deb4e59e4ba069146efd31dad, type: 3}
@@ -21097,6 +22779,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -21104,6 +22791,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (99)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -21176,6 +22873,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -21183,6 +22885,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -21255,6 +22967,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -21262,6 +22979,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (119)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -21406,6 +23133,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6144224021685067700, guid: 34f88c99d012190438164b58ff697ad4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144224021685067700, guid: 34f88c99d012190438164b58ff697ad4,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144224021685067700, guid: 34f88c99d012190438164b58ff697ad4,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144224021685067700, guid: 34f88c99d012190438164b58ff697ad4,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1.3214e-41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144224021685067700, guid: 34f88c99d012190438164b58ff697ad4,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 1.02e-43
+      objectReference: {fileID: 0}
     - target: {fileID: 8704640667545384215, guid: 34f88c99d012190438164b58ff697ad4,
         type: 3}
       propertyPath: m_Name
@@ -21602,6 +23354,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -21609,6 +23366,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -21933,6 +23700,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -21940,6 +23712,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (131)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -22012,6 +23794,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -22019,6 +23806,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -22290,6 +24087,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -22297,6 +24099,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -22394,6 +24206,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -22401,6 +24218,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -22473,6 +24300,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -22480,6 +24312,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -22577,6 +24419,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -22584,6 +24431,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (100)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -22848,6 +24705,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -22855,6 +24717,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -22927,6 +24799,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ea6c321ab64d1e24a80f826531001792, type: 2}
@@ -22934,6 +24811,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -23174,6 +25061,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -23181,6 +25073,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (118)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -23362,6 +25264,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -23369,6 +25276,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -23983,6 +25900,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -23990,6 +25912,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -24146,6 +26078,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -24153,6 +26090,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (94)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -24225,6 +26172,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -24232,6 +26184,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -24329,6 +26291,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -24336,6 +26303,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (90)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -24489,7 +26466,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1425403346}
     - target: {fileID: 3067524834757404856, guid: 7ef3d00e5d7473b4484f081739748f89,
         type: 3}
       propertyPath: SpawnPositions.Array.size
@@ -24605,6 +26582,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -24612,6 +26594,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (123)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -24818,6 +26810,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -24825,6 +26822,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -24897,6 +26904,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -24904,6 +26916,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -25001,6 +27023,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -25008,6 +27035,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -25139,6 +27176,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2061067188950526851, guid: 10b83033d79e46d40a3f2dae19d9210f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061067188950526851, guid: 10b83033d79e46d40a3f2dae19d9210f,
+        type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5901798588765359286, guid: 10b83033d79e46d40a3f2dae19d9210f,
         type: 3}
       propertyPath: m_Name
@@ -25404,6 +27451,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -25411,6 +27463,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (110)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -25592,6 +27654,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -25599,6 +27666,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (129)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -25755,6 +27832,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -25762,6 +27844,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (122)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -26171,7 +28263,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -26815,6 +28907,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -26822,6 +28919,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (114)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -26919,6 +29026,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -26926,6 +29038,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -27314,6 +29436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -27321,6 +29448,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -27586,6 +29723,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -27593,6 +29735,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (130)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -27671,6 +29823,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -27678,6 +29835,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -27968,6 +30135,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac156485f846ba84fb67039c7a9efca0, type: 2}
@@ -27975,6 +30147,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks 04 (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8a0312ad934f7f4fa073c3cba40e8f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8a0312ad934f7f4fa073c3cba40e8f5, type: 3}
@@ -28339,12 +30521,12 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 3417
-  m_UseColorTemperature: 1
+  m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
