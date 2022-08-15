@@ -12,6 +12,7 @@ public abstract class Enemies : MonoBehaviour
     [SerializeField] protected int AttackStrenght;
     protected Animator animator;
     public bool TesteDeMorte;
+    public bool failsafe;
 
 
     protected float timer = 0;

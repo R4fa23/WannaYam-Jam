@@ -16,6 +16,7 @@ public class EnemySpawner : MonoBehaviour
     public int i;
     private NavMeshTriangulation Triangulation;
    [SerializeField]private GameObject Player;
+
     void Start()
     {
         timer = IntervalOfSpawn;
@@ -98,6 +99,7 @@ public class EnemySpawner : MonoBehaviour
             {
                 anima.gameObject.GetComponent<Animator>().SetTrigger("Close");
             }
+            Player.GetComponent<PlayerManager>().playerStats.LevelCompletedTrigger();
         }
        
                    

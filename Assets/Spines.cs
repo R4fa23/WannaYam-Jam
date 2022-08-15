@@ -34,7 +34,7 @@ public class Spines : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            if (EnemiesTakeDamage)
+            if (EnemiesTakeDamage && other.gameObject.GetComponent<Enemies>().failsafe == false)
             {
                 other.gameObject.GetComponent<Enemies>().ChangeState(Enemies.States.DEAD);
 
