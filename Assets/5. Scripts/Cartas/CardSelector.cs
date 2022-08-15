@@ -73,6 +73,7 @@ public class CardSelector : MonoBehaviour
         {
             playerStats.canMove = true;
             selectScreen.SetActive(false);
+            playerStats.OpenDoorLevel();
             StopCoroutine(TurnCardUpWhenSelectedCards());
         }
 

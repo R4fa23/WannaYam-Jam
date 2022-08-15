@@ -16,6 +16,11 @@ public class Chest : MonoBehaviour
         playerStats.LevelCompleted.RemoveListener(OpenChest);
     }
 
+    private void Start()
+    {
+        //OpenChest();
+    }
+
     public void OpenChest()
     {
         chest.SetActive(true);

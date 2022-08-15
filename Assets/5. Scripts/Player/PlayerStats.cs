@@ -43,6 +43,7 @@ public class PlayerStats : ScriptableObject
     [System.NonSerialized] public UnityEvent DeathEvent;
     [System.NonSerialized] public UnityEvent LevelCompleted;
     [System.NonSerialized] public UnityEvent SelectCard;
+    [System.NonSerialized] public UnityEvent OpenDoorLevelEvent;
 
     [Header("Inputs")]
     public bool attackPressing;
@@ -82,6 +83,7 @@ public class PlayerStats : ScriptableObject
         if (DeathEvent == null) DeathEvent = new UnityEvent();
         if (LevelCompleted == null) LevelCompleted = new UnityEvent();
         if (SelectCard == null) SelectCard = new UnityEvent();
+        if (OpenDoorLevelEvent == null) OpenDoorLevelEvent = new UnityEvent();
     }
 
     public void DashTrigger()
@@ -111,11 +113,16 @@ public class PlayerStats : ScriptableObject
     {
         DeathEvent.Invoke();
     }
-
     public void LevelCompletedTrigger()
     {
         LevelCompleted.Invoke();
     }
+
+    public void OpenDoorLevel()
+    {
+        OpenDoorLevelEvent.Invoke();
+    }
+
     public void SelectCardTrigger()
     {
         SelectCard.Invoke();
@@ -123,6 +130,7 @@ public class PlayerStats : ScriptableObject
 
     public void ResetValues()
     {
+        weapon = Weapon.None;
         maxlife = maxlifeReset;
         currentLife = maxlifeReset;
         damage = damageReset;

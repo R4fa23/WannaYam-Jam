@@ -55,6 +55,7 @@ public class glitch : Enemies
         if (Vector3.Distance(transform.position, Player.transform.position) < AttackDist)
         {
             animator.SetTrigger("sobe");
+            GetComponent<Collider>().enabled = true;
             ChangeState(States.ATACKING);
         }
         if(transform.position.x > Player.transform.position.x)
@@ -74,6 +75,7 @@ public class glitch : Enemies
             if (!CantakeDamage)
             {
                 animator.SetTrigger("sobe");
+                GetComponent<Collider>().enabled = true;
                 ShowTimer = Random.Range(ShowingTime - (0.5f * ShowingTime), ShowingTime + (0.5f * ShowingTime));
                 CantakeDamage = true;
 
@@ -90,6 +92,7 @@ public class glitch : Enemies
             if(CantakeDamage)
             {
                 animator.SetTrigger("desce");
+                GetComponent<Collider>().enabled = false;
                 HideTimer = Random.Range(HidingTime - (0.5f * HidingTime), HidingTime + (0.5f * HidingTime));
                 CantakeDamage = false;
             }
@@ -165,6 +168,7 @@ public class glitch : Enemies
         {
             Debug.Log("Glitch te viu");
             animator.SetTrigger("sobe");
+            GetComponent<Collider>().enabled = true;
             ChangeState(States.FOLLOWING);
 
 
