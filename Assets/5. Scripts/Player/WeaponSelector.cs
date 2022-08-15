@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class WeaponSelector : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class WeaponSelector : MonoBehaviour
     public GameObject[] weaponMesh;
     public GameObject weaponGroup;
     float index;
-
+    public UnityEvent openDoor;
     private void Update()
     {
         switch (weapon)
@@ -43,6 +44,7 @@ public class WeaponSelector : MonoBehaviour
     {
         if(other.tag == "Player")
         {
+            openDoor.Invoke();
             switch (weapon)
             {
                 case Weapon.Gun:

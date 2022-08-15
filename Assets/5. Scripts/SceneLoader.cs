@@ -66,4 +66,14 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        playerStats.OpenDoorLevelEvent.AddListener(OpenDoor);
+    }
+
+    private void OnDisable()
+    {
+        playerStats.OpenDoorLevelEvent.RemoveListener(OpenDoor);
+    }
+
 }

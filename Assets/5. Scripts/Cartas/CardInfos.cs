@@ -22,8 +22,7 @@ public class CardInfos : MonoBehaviour
 
     private void OnValidate()
     {
-            UpdateInfos();    
-        
+      UpdateInfos();  
     }
 
     private void Start()
@@ -53,5 +52,6 @@ public class CardInfos : MonoBehaviour
         playerStats.attackSpeedMultiplier += cardSO.attackSpeedPercent / 100;
         playerStats.dashUses += cardSO.dashUses;
         playerStats.currentLife += cardSO.heal;
+        playerStats.LifeBarTrigger();
     }
 }
