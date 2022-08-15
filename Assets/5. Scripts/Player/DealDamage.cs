@@ -10,7 +10,7 @@ public class DealDamage : MonoBehaviour
     {
         if(other.tag == "Enemy")
         {
-            other.GetComponent<Enemies>().Dano(PlayerStats.damage);
+            other.GetComponent<Enemies>().Dano(PlayerStats.damage * PlayerStats.damageMultiplier);
             if (gameObject.tag == "Bullet") gameObject.SetActive(false);
         }
 
