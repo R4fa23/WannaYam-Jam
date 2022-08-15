@@ -9,12 +9,13 @@ public class glitch : Enemies
     [SerializeField] private float ShowTimer;
     [SerializeField] private float HideTimer;
     [SerializeField] private GameObject texture;
+    
     private bool CantakeDamage;
 
 
     void Start()
     {
-
+        failsafe = true;
         agent.updateRotation = false;
 
 

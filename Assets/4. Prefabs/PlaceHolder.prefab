@@ -185,8 +185,8 @@ MonoBehaviour:
   Life: 10
   FollowDist: 7
   AttackDist: 4
-  AttackDelay: 0.3
-  AttackStrenght: 2
+  AttackDelay: 0.75
+  AttackStrenght: 5
   TesteDeMorte: 0
   state: 0
   TimeOfBulletWave: 5
