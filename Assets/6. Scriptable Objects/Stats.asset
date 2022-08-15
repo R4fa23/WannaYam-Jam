@@ -12,15 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adeb4966aa09d3c449336c543a919f90, type: 3}
   m_Name: Stats
   m_EditorClassIdentifier: 
-  weapon: 0
+  weapon: 4
   maxlife: 100
-  currentLife: 90
+  currentLife: 100
   damage: 0
+  damageMultiplier: 1
   maxstamina: 1
   currentStamina: 1
   staminaGain: 0.2
   dashUses: 3
-  attackSpeed: 4
+  attackSpeed: 1
   dead: 0
   attackSpeedMultiplier: 1
   moveSpeed: 3
@@ -28,7 +29,7 @@ MonoBehaviour:
   dashForce: 12
   isDashing: 0
   smoothTime: 0.1
-  maxDashUses: 3
+  maxDashUses: 10
   dontUpdateSprites: 0
   inputValue: {x: 0, y: 0}
   canMove: 1
@@ -44,4 +45,5 @@ MonoBehaviour:
   armaLaserSpeed: 4
   espada: 2
   espadaSpeed: 2
+  inChest: 0
   wichLevel: 0
