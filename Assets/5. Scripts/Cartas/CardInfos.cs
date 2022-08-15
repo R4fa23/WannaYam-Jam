@@ -20,7 +20,11 @@ public class CardInfos : MonoBehaviour
 
     public Color color;
 
-      
+    private void OnValidate()
+    {
+            UpdateInfos();    
+        
+    }
 
     private void Start()
     {
@@ -30,16 +34,15 @@ public class CardInfos : MonoBehaviour
     public void UpdateInfos()
     {
         nameCard.text = cardSO.nameCard;
-        /*history.text = cardSO.history;
+        history.text = cardSO.history;
         effect.text = cardSO.effect;
         genre.text = cardSO.genre;
         type.text = cardSO.cardType.ToString();
 
-        card.sprite = cardSO.card;
         splash.sprite = cardSO.splash;
-        icon.sprite = cardSO.splash;
-
-        color = cardSO.color;*/
+        icon.sprite = cardSO.icon;
+        if (cardSO.cardType == CardSO.Type.normal) card.color = Color.white;
+        else card.color = color;
     }
 
     public void CardSelected()

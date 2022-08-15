@@ -221,7 +221,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7790369, y: 1}
+    m_SensorSize: {x: 1.7775862, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -622,11 +622,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3183238064551950701}
     m_Modifications:
-    - target: {fileID: 6336290951671573453, guid: 2838496722e0e4f46af823ad27009b0a,
-        type: 3}
-      propertyPath: image
-      value: 
-      objectReference: {fileID: 6758105456450701686}
     - target: {fileID: 7829074942915506896, guid: 2838496722e0e4f46af823ad27009b0a,
         type: 3}
       propertyPath: m_Pivot.x
@@ -737,11 +732,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 7829074942915506906, guid: 2838496722e0e4f46af823ad27009b0a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2838496722e0e4f46af823ad27009b0a, type: 3}
 --- !u!224 &6758105456426874959 stripped
@@ -750,18 +740,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 3562324444759198367}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6758105456450701686 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7829074942956110825, guid: 2838496722e0e4f46af823ad27009b0a,
-    type: 3}
-  m_PrefabInstance: {fileID: 3562324444759198367}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5354337585011588072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -934,16 +912,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: scene loader
-      objectReference: {fileID: 0}
-    - target: {fileID: 1817956630822334688, guid: d73b643821840cd4fb80c7c85509d7c4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5237335763375085569, guid: d73b643821840cd4fb80c7c85509d7c4,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5522134004697384238, guid: d73b643821840cd4fb80c7c85509d7c4,
         type: 3}

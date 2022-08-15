@@ -32,141 +32,65 @@ public class CardSelector : MonoBehaviour
         Debug.Log("OpenSelection");
         playerStats.canMove = false;
         selectScreen.SetActive(true);
-        StartCoroutine(OpeningSelectionTimer());
+        StartCoroutine(TurnCardUpWhenSelectedCards());
     }
 
-    IEnumerator OpeningSelectionTimer()
+
+    IEnumerator TurnCardUpWhenSelectedCards()
     {
-        WichCardType();
-
+        CardSO[] deckToChoose;
+        stage++;
+        if (stage <= 2) deckToChoose = cardsRefsComun;
+        else deckToChoose = cardsRefsSpecial;
+        
         yield return new WaitForSeconds(2f);
+        int index = 0;
 
+        if (stage <= 3)
+        {           
+            while (index <= 1)
+            {
+                int random = Random.Range(0, deckToChoose.Length);
+                for (int i = 0; i < deckToChoose.Length; i++)
+                {
+                    if (i == random) selectedSO = deckToChoose[i];
+                }
+
+                for (int i = 0; i < cardsToSelect.Length; i++)
+                {
+                    if (i == index)
+                    {
+                        cardsToSelect[i].cardSO = selectedSO;
+                        cardsToSelect[i].UpdateInfos();
+                    }
+                }
+                index++;
+                Debug.Log("Alow");
+                Debug.Log(index);
+            }
+        }
+        else
+        {
+            playerStats.canMove = true;
+            selectScreen.SetActive(false);
+            StopCoroutine(TurnCardUpWhenSelectedCards());
+        }
+
+        yield return new WaitUntil(()=> index >= 1);
+        Debug.Log("Alow");
         foreach (var card in cardsToSelect)
         {
             card.GetComponent<Animator>().SetTrigger("TurnCardUp");
         }
-    }
-
-    IEnumerator ClosingSelection()
-    {
-        foreach (var card in cardsToSelect)
-        {
-            card.GetComponent<Animator>().SetTrigger("TurnCardDown");
-        }
-
-        yield return new WaitForSeconds(3f);
-
-        playerStats.canMove = true;
-        selectScreen.SetActive(false);
-        //Door
-    }
+    }    
 
     public void ClickedCard()
     {
         Debug.Log("cliked");
-        StartCoroutine(SelectAndFlipCard());
-    }
-
-    IEnumerator SelectAndFlipCard()
-    {
         foreach (var card in cardsToSelect)
         {
             card.GetComponent<Animator>().SetTrigger("TurnCardDown");
-        }
-        WichCardType();
-
-        yield return new WaitForSeconds(1f);
-
-        foreach (var card in cardsToSelect)
-        {
-            card.GetComponent<Animator>().SetTrigger("TurnCardUp");
-        }
+        }      
+        StartCoroutine(TurnCardUpWhenSelectedCards());        
     }
-
-    public void WichCardType()
-    {
-        if (stage < 3)
-        {            
-            if (stage <= 1) ChooseAComunCard();
-            else ChooseASpecialCard();
-        }
-        else StartCoroutine(ClosingSelection());        
-    }
-
-    public void ChooseAComunCard()
-    {
-        int randomCard = Random.Range(0, cardsRefsComun.Length + 1);
-        Debug.Log(randomCard);
-
-        for (int i = 0; i < cardsRefsComun.Length; i++)
-        {
-            if(i == randomCard) selectedSO = cardsRefsComun[i];            
-        }
-
-        for (int i = 0; i < cardsToSelect.Length; i++)
-        {
-            if (i == 0) 
-            {
-                cardsToSelect[i].cardSO = selectedSO;
-                //cardsToSelect[i].UpdateInfos();
-            }
-        }
-
-        randomCard = Random.Range(0, cardsRefsComun.Length + 1);
-        Debug.Log(randomCard);
-
-        for (int i = 0; i < cardsRefsComun.Length; i++)
-        {
-            if (i == randomCard) selectedSO = cardsRefsComun[i];            
-        }
-
-        for (int i = 0; i < cardsToSelect.Length; i++)
-        {
-            if (i == 1)
-            {
-                cardsToSelect[i].cardSO = selectedSO;
-                //cardsToSelect[i].UpdateInfos();
-            }
-        }
-        stage++;
-    }
-
-    public void ChooseASpecialCard()
-    {
-        int randomCard = Random.Range(0, cardsRefsSpecial.Length + 1);
-
-        for (int i = 0; i < cardsRefsSpecial.Length; i++)
-        {
-            if (i == randomCard) selectedSO = cardsRefsSpecial[i];
-            
-        }
-
-        for (int i = 0; i < cardsRefsSpecial.Length; i++)
-        {
-            if (i == 0)
-            {
-                cardsToSelect[i].cardSO = selectedSO;
-                cardsToSelect[i].UpdateInfos();
-            }
-        }
-
-        randomCard = Random.Range(0, cardsRefsSpecial.Length + 1);
-
-        for (int i = 0; i < cardsRefsSpecial.Length; i++)
-        {
-            if (i == randomCard) selectedSO = cardsRefsSpecial[i];
-            
-        }
-
-        for (int i = 0; i < cardsToSelect.Length; i++)
-        {
-            if (i == 1)
-            {
-                cardsToSelect[i].cardSO = selectedSO;
-                cardsToSelect[i].UpdateInfos();
-            }
-        }
-        stage++;
-    }
-
 }
