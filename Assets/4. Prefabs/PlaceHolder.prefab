@@ -168,7 +168,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 1
   m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
 --- !u!114 &8385962511956486594
 MonoBehaviour:
@@ -185,8 +185,8 @@ MonoBehaviour:
   Life: 10
   FollowDist: 7
   AttackDist: 4
-  AttackDelay: 0.3
-  AttackStrenght: 2
+  AttackDelay: 0.75
+  AttackStrenght: 5
   TesteDeMorte: 0
   state: 0
   TimeOfBulletWave: 5

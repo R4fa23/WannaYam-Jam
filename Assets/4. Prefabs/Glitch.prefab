@@ -70,7 +70,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 1
   m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
 --- !u!54 &2518197603209898456
 Rigidbody:
@@ -124,11 +124,11 @@ MonoBehaviour:
   FollowDist: 20
   AttackDist: 1.3
   AttackDelay: 2
-  AttackStrenght: 5
+  AttackStrenght: 25
   TesteDeMorte: 0
   state: 3
   HidingTime: 1
-  ShowingTime: 3
+  ShowingTime: 4
   ShowTimer: 0
   HideTimer: 0
   texture: {fileID: 1337118291641569468}

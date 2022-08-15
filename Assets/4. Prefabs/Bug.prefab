@@ -88,7 +88,7 @@ MonoBehaviour:
   FollowDist: 10
   AttackDist: 1.1
   AttackDelay: 2
-  AttackStrenght: 5
+  AttackStrenght: 7
   TesteDeMorte: 0
   state: 0
 --- !u!54 &7832231506007622623
