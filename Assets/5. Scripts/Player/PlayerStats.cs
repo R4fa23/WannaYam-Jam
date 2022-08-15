@@ -130,7 +130,7 @@ public class PlayerStats : ScriptableObject
 
     public void ResetValues()
     {
-        weapon = Weapon.None;
+        //weapon = Weapon.None;
         maxlife = maxlifeReset;
         currentLife = maxlifeReset;
         damage = damageReset;
