@@ -5917,32 +5917,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1516951290}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &354722036
-BoxCollider2D:
+--- !u!65 &354722036
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354722034}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -2, y: 0.50000006}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4, y: 1.0000001}
-  m_EdgeRadius: 0
+  m_Size: {x: 4, y: 1.0000002, z: 1.2}
+  m_Center: {x: -2.0000007, y: 0.5000001, z: 0.60000026}
 --- !u!1001 &361984283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15696,32 +15683,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1078795768}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &910147093
-BoxCollider2D:
+--- !u!65 &910147093
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910147091}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -2, y: 0.50000006}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4, y: 1.0000001}
-  m_EdgeRadius: 0
+  m_Size: {x: 4, y: 1.0000002, z: 1.2}
+  m_Center: {x: -2, y: 0.5000001, z: 0.59999955}
 --- !u!4 &911775855 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 690b015e35ea40646abeeb17ba054ee8,
@@ -25711,7 +25685,7 @@ PrefabInstance:
     - target: {fileID: 9145627003905164706, guid: 4f5658111aa297b46a28483e8dd81c09,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.63
+      value: 1.35
       objectReference: {fileID: 0}
     - target: {fileID: 9145627003905164706, guid: 4f5658111aa297b46a28483e8dd81c09,
         type: 3}
