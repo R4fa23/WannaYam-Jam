@@ -46,9 +46,18 @@ public class SceneLoader : MonoBehaviour
         for (int i = 0; i < levelToLoad.Length; i++)
         {
             if(randomLevel == i)
-            {                
-                SceneManager.LoadScene(levelToLoad[i].ToString());
+            {
+                StartCoroutine(loadAsync(levelToLoad[i].ToString()));
             }
+        }
+    }
+
+    IEnumerator loadAsync(string level)
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(level);
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
         }
     }
 
