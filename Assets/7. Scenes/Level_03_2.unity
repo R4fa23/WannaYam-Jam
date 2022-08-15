@@ -20490,6 +20490,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1256896651, guid: 4f5658111aa297b46a28483e8dd81c09, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3865195043134739439, guid: 4f5658111aa297b46a28483e8dd81c09,
         type: 3}
       propertyPath: m_Name
@@ -20552,6 +20556,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f5658111aa297b46a28483e8dd81c09, type: 3}
+--- !u!1 &1247155854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3865195043134739439, guid: 4f5658111aa297b46a28483e8dd81c09,
+    type: 3}
+  m_PrefabInstance: {fileID: 1247155853}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1252224686 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 690b015e35ea40646abeeb17ba054ee8,
@@ -25724,6 +25734,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f5658111aa297b46a28483e8dd81c09, type: 3}
+--- !u!1 &1537978206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3865195043134739439, guid: 4f5658111aa297b46a28483e8dd81c09,
+    type: 3}
+  m_PrefabInstance: {fileID: 1537978205}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1538857492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27571,6 +27587,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1247155853}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1669491383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247155854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a204e66feec994b98c499102cfe397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPositions: []
+  waves: []
+  DeadEnemies: 
+  IntervalOfSpawn: 0
+  i: 0
+  Player: {fileID: 0}
 --- !u!1001 &1672165044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35857,6 +35891,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1537978205}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2135978541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537978206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a204e66feec994b98c499102cfe397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPositions: []
+  waves: []
+  DeadEnemies: 
+  IntervalOfSpawn: 0
+  i: 0
+  Player: {fileID: 0}
 --- !u!1 &2139436422 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e1c1bc1deb4e59e4ba069146efd31dad,
