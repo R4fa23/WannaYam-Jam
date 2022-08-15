@@ -8,6 +8,7 @@ public class PlaceHolder : Enemies
     private float i;
     [SerializeField] private float TimeOfBulletWave;
     [SerializeField] private float TimeOfCoolDown;
+    public int BulletSpeed;
     override public void starter(int wave, EnemySpawner source, GameObject player, NavMeshTriangulation Triang)
     {
         animator = GetComponent<Animator>();
@@ -135,7 +136,7 @@ public class PlaceHolder : Enemies
                     GameObject bullet = ObjectPool.instance.GetBulletFromPool();
                     bullet.transform.position = transform.position;
                     bullet.GetComponent<turretBullet>().Damage = AttackStrenght;
-                    bullet.GetComponent<Rigidbody>().velocity = (rayDirection * 500 * Time.deltaTime);
+                    bullet.GetComponent<Rigidbody>().velocity = (rayDirection * BulletSpeed * Time.deltaTime);
                     i++;
                 }
             }

@@ -188,9 +188,11 @@ MonoBehaviour:
   AttackDelay: 0.75
   AttackStrenght: 5
   TesteDeMorte: 0
+  failsafe: 0
   state: 0
   TimeOfBulletWave: 5
   TimeOfCoolDown: 3
+  BulletSpeed: 150
 --- !u!95 &2045810417
 Animator:
   serializedVersion: 4

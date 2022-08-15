@@ -6,6 +6,7 @@ public class turretBullet : MonoBehaviour
 {
     public int Damage;
     private bool damaged;
+    
     [SerializeField]private float TimeToDie;
     private float timer;
 

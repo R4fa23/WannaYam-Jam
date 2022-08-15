@@ -93,7 +93,7 @@ public class EnemySpawner : MonoBehaviour
         
         else
         { Debug.Log("Acabou a fase");
-
+            enableSpawn = false;
 
             foreach (Transform anima in SpawnPositions)
             {

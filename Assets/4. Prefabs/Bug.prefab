@@ -87,7 +87,7 @@ MonoBehaviour:
   Life: 10
   FollowDist: 10
   AttackDist: 1.1
-  AttackDelay: 2
+  AttackDelay: 0.5
   AttackStrenght: 7
   TesteDeMorte: 0
   failsafe: 0
