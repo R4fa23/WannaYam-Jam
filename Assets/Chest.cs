@@ -5,12 +5,7 @@ using UnityEngine;
 public class Chest : MonoBehaviour
 {
     public PlayerStats playerStats;
-    public GameObject chest;
-
-    private void Start()
-    {
-        playerStats.LevelCompletedTrigger();
-    }
+    public GameObject chest;   
 
     private void OnEnable()
     {
