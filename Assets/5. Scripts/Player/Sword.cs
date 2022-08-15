@@ -14,8 +14,8 @@ public class Sword : Weapon
     public override void Update()
     {
         base.Update();
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Sword Attack")) playerStats.canMove = false;
-        else playerStats.canMove = true;
+        /*if (animator.GetCurrentAnimatorStateInfo(0).IsName("Sword Attack")) playerStats.canMove = false;
+        else playerStats.canMove = true;*/
     }
 
     public override void Attack()

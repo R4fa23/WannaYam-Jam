@@ -72,6 +72,7 @@ public class CardSelector : MonoBehaviour
         else
         {
             playerStats.canMove = true;
+            playerStats.inChest = false;
             selectScreen.SetActive(false);
             playerStats.OpenDoorLevel();
             StopCoroutine(TurnCardUpWhenSelectedCards());
@@ -92,6 +93,6 @@ public class CardSelector : MonoBehaviour
         {
             card.GetComponent<Animator>().SetTrigger("TurnCardDown");
         }      
-        StartCoroutine(TurnCardUpWhenSelectedCards());        
+        StartCoroutine(TurnCardUpWhenSelectedCards());
     }
 }

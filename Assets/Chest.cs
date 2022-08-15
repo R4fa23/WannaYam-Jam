@@ -18,12 +18,14 @@ public class Chest : MonoBehaviour
 
     private void Start()
     {
-        //OpenChest();
+        
     }
 
     public void OpenChest()
     {
         chest.SetActive(true);
+        //playerStats.canMove = false;
+        //playerStats.inChest = true;
         gameObject.GetComponent<BoxCollider>().isTrigger = true;
         gameObject.GetComponent<BoxCollider>().enabled = true;
     }
@@ -32,8 +34,9 @@ public class Chest : MonoBehaviour
     {
         if(other.tag == ("Player"))
         {
+            playerStats.canMove = false;
             playerStats.SelectCardTrigger();
-            chest.SetActive(true);
+            chest.SetActive(false);
             gameObject.GetComponent<BoxCollider>().enabled = false;
         }
     }

@@ -61,12 +61,12 @@ public class Weapon : MonoBehaviour
 
     IEnumerator AttackTimer()
     {
-        animator.speed = playerStats.attackSpeed;
+        animator.speed = playerStats.attackSpeed * playerStats.attackSpeedMultiplier;
         canAttack = false;
         animator.SetTrigger("attack");
         if (ranged) RangedAttack();
 
-        yield return new WaitForSeconds(1/playerStats.attackSpeed);
+        yield return new WaitForSeconds(1/(playerStats.attackSpeed * playerStats.attackSpeedMultiplier));
 
         canAttack = true;
         animator.speed = 1;

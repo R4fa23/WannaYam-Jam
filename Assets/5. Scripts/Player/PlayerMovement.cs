@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator DashTimer()
     {
         playerStats.canMove = false;
+        playerStats.canTakeDamage = false;
         canDash = false;
         playerStats.isDashing = true;
         playerStats.currentStamina -= dashUses;
@@ -75,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
         playerStats.canMove = true;
         canDash = true;
         playerStats.isDashing = false;
+        playerStats.canTakeDamage = true;
     }
 
     void Dash()

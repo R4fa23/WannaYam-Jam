@@ -19,7 +19,6 @@ public class SceneLoader : MonoBehaviour
     public void LoadLevel()
     {
         playerStats.wichLevel++;
-
         switch (playerStats.wichLevel)
         {
             case 1:

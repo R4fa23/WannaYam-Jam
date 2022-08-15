@@ -27,7 +27,7 @@ public class CardInfos : MonoBehaviour
 
     private void Start()
     {
-        
+
     }
 
     public void UpdateInfos()

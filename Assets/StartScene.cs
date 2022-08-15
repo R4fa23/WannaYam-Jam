@@ -16,4 +16,9 @@ public class StartScene : MonoBehaviour
     {
         
     }
+
+    public void Jesuis()
+    {
+        SceneManager.LoadScene("Level_00");
+    }
 }

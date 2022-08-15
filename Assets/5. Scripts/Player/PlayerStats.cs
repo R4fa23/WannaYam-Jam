@@ -62,6 +62,7 @@ public class PlayerStats : ScriptableObject
     public float armaLaserSpeed;
     public float espada;
     public float espadaSpeed;
+    public bool inChest;
 
     [Header("Scenes")]
 
@@ -130,7 +131,8 @@ public class PlayerStats : ScriptableObject
 
     public void ResetValues()
     {
-        //weapon = Weapon.None;
+        Debug.Log("resetValu");
+        weapon = Weapon.None;
         maxlife = maxlifeReset;
         currentLife = maxlifeReset;
         damage = damageReset;
@@ -146,5 +148,6 @@ public class PlayerStats : ScriptableObject
         dead = false;
         wichLevel = 0;
         damageMultiplier = 1;
+        inChest = false;
     }
 }
